@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="JavaEE," />
 
 
 
@@ -79,14 +79,18 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Categories">
-<meta property="og:url" content="http://yoursite.com/categories/index.html">
+<meta name="description" content="Web与Servlet概念及功能 Web站点只用来浏览信息，Web应用需要运行服务器端的程序，给客户提供服务 Servlet是JavaEE系列技术中的Web组件，是运行在Web服务器上的程序，用Java代码编写的类，必须遵守一定的规范 本课程主要学习使用JavaEE规范中的Servlet和JSP开发Web应用，JSP的本质是Servletweb.xml中配置Servlet web应用都会有一个配置">
+<meta name="keywords" content="JavaEE">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Servlet">
+<meta property="og:url" content="http://yoursite.com/2018/09/02/Servlet/index.html">
 <meta property="og:site_name" content="ZY4IT">
+<meta property="og:description" content="Web与Servlet概念及功能 Web站点只用来浏览信息，Web应用需要运行服务器端的程序，给客户提供服务 Servlet是JavaEE系列技术中的Web组件，是运行在Web服务器上的程序，用Java代码编写的类，必须遵守一定的规范 本课程主要学习使用JavaEE规范中的Servlet和JSP开发Web应用，JSP的本质是Servletweb.xml中配置Servlet web应用都会有一个配置">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-09-02T06:58:10.140Z">
+<meta property="og:updated_time" content="2018-09-02T07:04:57.573Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Categories">
+<meta name="twitter:title" content="Servlet">
+<meta name="twitter:description" content="Web与Servlet概念及功能 Web站点只用来浏览信息，Web应用需要运行服务器端的程序，给客户提供服务 Servlet是JavaEE系列技术中的Web组件，是运行在Web服务器上的程序，用Java代码编写的类，必须遵守一定的规范 本课程主要学习使用JavaEE规范中的Servlet和JSP开发Web应用，JSP的本质是Servletweb.xml中配置Servlet web应用都会有一个配置">
 
 
 
@@ -116,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/categories/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/09/02/Servlet/"/>
 
 
 
 
 
-  <title>Categories | ZY4IT</title>
+  <title>Servlet | ZY4IT</title>
   
 
 
@@ -247,40 +251,174 @@
 
   <div id="posts" class="posts-expand">
     
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/09/02/Servlet/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="T-Bag">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ZY4IT">
+    </span>
+
     
-    
-    <div class="post-block page">
       <header class="post-header">
 
-	<h1 class="post-title" itemprop="name headline">Categories</h1>
-
-
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
         
         
-          <div class="category-all-page">
-            <div class="category-all-title">
-                目前共计 1 个分类
-            </div>
-            <div class="category-all">
-              <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/inbox/">inbox</a><span class="category-list-count">2</span></li></ul>
-            </div>
-          </div>
+          <h1 class="post-title" itemprop="name headline">Servlet</h1>
         
-      </div>
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-09-02T23:03:51+08:00">
+                2018-09-02
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/inbox/" itemprop="url" rel="index">
+                    <span itemprop="name">inbox</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
       
+
+      
+        <h3 id="Web与Servlet"><a href="#Web与Servlet" class="headerlink" title="Web与Servlet"></a>Web与Servlet</h3><h4 id="概念及功能"><a href="#概念及功能" class="headerlink" title="概念及功能"></a>概念及功能</h4><ul>
+<li>Web站点只用来浏览信息，Web应用需要运行服务器端的程序，给客户提供服务</li>
+<li>Servlet是JavaEE系列技术中的Web组件，是运行在Web服务器上的程序，用Java代码编写的类，必须遵守一定的规范</li>
+<li>本课程主要学习使用JavaEE规范中的Servlet和JSP开发Web应用，JSP的本质是Servlet<h4 id="web-xml中配置Servlet"><a href="#web-xml中配置Servlet" class="headerlink" title="web.xml中配置Servlet"></a>web.xml中配置Servlet</h4></li>
+<li>web应用都会有一个配置文件web.xml，工程目录中位于WebContent/WEB-INF下，被称为部署描述符文件</li>
+<li>web.xml文件的根元素是&lt;web-app&gt;,所有其他元素都在此根元素之间配置；文件中可以对Web应用开发中的一些配置进行描述</li>
+<li>Servlet也需要在web.xml中配置才能够被访问使用</li>
+<li>由于创建工程时选择自动更新web.xml文件，所以FirstServlet的配置信息已经自动生成</li>
+</ul>
+
       
     </div>
     
     
     
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/JavaEE/" rel="tag"># JavaEE</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/08/31/hello-world/" rel="next" title="会话跟踪概述">
+                <i class="fa fa-chevron-left"></i> 会话跟踪概述
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
   </div>
 
 
@@ -289,6 +427,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -309,8 +451,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -370,6 +521,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Web与Servlet"><span class="nav-number">1.</span> <span class="nav-text">Web与Servlet</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#概念及功能"><span class="nav-number">1.1.</span> <span class="nav-text">概念及功能</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#web-xml中配置Servlet"><span class="nav-number">1.2.</span> <span class="nav-text">web.xml中配置Servlet</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       

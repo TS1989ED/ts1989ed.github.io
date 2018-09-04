@@ -12,6 +12,20 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 <meta name="theme-color" content="#222">
 
+<script>
+    (function () {
+        if ('') {
+            if (prompt('请输入文章密码') !== '') {
+                alert('密码错误！');
+                if (history.length === 1) {
+                    location.replace("http://xxxxxxx.xxx"); // 这里替换成你的首页
+                } else {
+                    history.back();
+                }
+            }
+        }
+    })();
+</script>
 
 
 
@@ -53,16 +67,8 @@
 <link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
 
 
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
 
 
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
-
-
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
-
-
-  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
 
 
 
@@ -73,6 +79,8 @@
 
 
 
+
+  <link rel="alternate" href="/atom.xml" title="ZY4IT" type="application/atom+xml" />
 
 
 
@@ -280,7 +288,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/09/04/ProblemsInHexo/" itemprop="url">Hexo使用中遇到的问题</a></h1>
+                <a class="post-title-link" href="/2018/09/04/ProblemsInHexo/" itemprop="url">Hexo使用中遇到的小问题</a></h1>
         
 
         <div class="post-meta">
@@ -308,7 +316,7 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-09-04T06:58:09Z">
+              <time title="更新于" itemprop="dateModified" datetime="2018-09-04T17:00:34Z">
                 2018-09-04
               </time>
             
@@ -348,6 +356,37 @@
           
 
           
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  115字
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  1分钟
+                </span>
+              
+            </div>
+          
 
           
 
@@ -373,7 +412,11 @@
 版权信息总是显示为yoursite.com
 将hero/_config.yml中的url的·yoursite更改即可
 
-          
+本地效果和发布效果不一致
+Mac用Command+Shift+R对Chrome强制刷新
+
+h
+          ...
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2018/09/04/ProblemsInHexo/#more" rel="contents">
@@ -474,7 +517,7 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-09-04T09:17:28Z">
+              <time title="更新于" itemprop="dateModified" datetime="2018-09-04T16:34:47Z">
                 2018-09-04
               </time>
             
@@ -514,6 +557,37 @@
           
 
           
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  2,805字
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  15分钟
+                </span>
+              
+            </div>
+          
 
           
 
@@ -533,12 +607,8 @@
         
           
           
-修改文章页宽
-打开\themes\next\source\css\ _variables\base.styl文件，找到以下字段并修改为合适的宽度:
-1content-desktop-large = 1000px
-
-修改小型代码块颜色
-修改\themes\next\source\css\ _vari
+目录结构
+12345678910111213141516171819202122232425262728293031323334353637├── .github            #git信息├── languages          #多语言|   ├── default.yml    
           ...
           <!--noindex-->
           <div class="post-button text-center">
@@ -679,6 +749,37 @@
 
           
 
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  3,135字
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  11分钟
+                </span>
+              
+            </div>
           
 
           
@@ -824,6 +925,13 @@ HTTP协议是无状态的，也就是说，一次请求结束后，HTTP协议就
 
           </nav>
 
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
           
 
           
@@ -1081,6 +1189,9 @@ show_date_time();
 
   
 
+  <!-- ColudTag彩色 -->
   <script type="text/javascript" src="/js/src/dytitle.js"></script>
+  <!-- 页面点击小红心 -->
+  <script type="text/javascript" src="/js/src/love.js"></script>
 </body>
 </html>

@@ -12,6 +12,20 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 <meta name="theme-color" content="#222">
 
+<script>
+    (function () {
+        if ('') {
+            if (prompt('请输入文章密码') !== '') {
+                alert('密码错误！');
+                if (history.length === 1) {
+                    location.replace("http://xxxxxxx.xxx"); // 这里替换成你的首页
+                } else {
+                    history.back();
+                }
+            }
+        }
+    })();
+</script>
 
 
 
@@ -53,16 +67,8 @@
 <link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
 
 
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
 
 
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
-
-
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
-
-
-  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
 
 
 
@@ -74,23 +80,25 @@
 
 
 
+  <link rel="alternate" href="/atom.xml" title="ZY4IT" type="application/atom+xml" />
 
 
 
 
 
-<meta name="description" content="标签和分类失败 在设置tags和categories时，- Hexo中间要加上空格  版权信息总是显示为yoursite.com 将hero/_config.yml中的url的·yoursite更改即可">
+
+<meta name="description" content="标签和分类失败 在设置tags和categories时，- Hexo中间要加上空格  版权信息总是显示为yoursite.com 将hero/_config.yml中的url的·yoursite更改即可  本地效果和发布效果不一致 Mac用Command+Shift+R对Chrome强制刷新  hexo s的一次报错 在一次错误地修改了.js文件后，hexo server报错，报错内容指向hig">
 <meta name="keywords" content="Hexo">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo使用中遇到的问题">
+<meta property="og:title" content="Hexo使用中遇到的小问题">
 <meta property="og:url" content="http://ts1989.cn/2018/09/04/ProblemsInHexo/index.html">
 <meta property="og:site_name" content="ZY4IT">
-<meta property="og:description" content="标签和分类失败 在设置tags和categories时，- Hexo中间要加上空格  版权信息总是显示为yoursite.com 将hero/_config.yml中的url的·yoursite更改即可">
+<meta property="og:description" content="标签和分类失败 在设置tags和categories时，- Hexo中间要加上空格  版权信息总是显示为yoursite.com 将hero/_config.yml中的url的·yoursite更改即可  本地效果和发布效果不一致 Mac用Command+Shift+R对Chrome强制刷新  hexo s的一次报错 在一次错误地修改了.js文件后，hexo server报错，报错内容指向hig">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-09-04T06:58:09.646Z">
+<meta property="og:updated_time" content="2018-09-04T17:00:34.588Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo使用中遇到的问题">
-<meta name="twitter:description" content="标签和分类失败 在设置tags和categories时，- Hexo中间要加上空格  版权信息总是显示为yoursite.com 将hero/_config.yml中的url的·yoursite更改即可">
+<meta name="twitter:title" content="Hexo使用中遇到的小问题">
+<meta name="twitter:description" content="标签和分类失败 在设置tags和categories时，- Hexo中间要加上空格  版权信息总是显示为yoursite.com 将hero/_config.yml中的url的·yoursite更改即可  本地效果和发布效果不一致 Mac用Command+Shift+R对Chrome强制刷新  hexo s的一次报错 在一次错误地修改了.js文件后，hexo server报错，报错内容指向hig">
 
 
 
@@ -126,7 +134,7 @@
 
 
 
-  <title>Hexo使用中遇到的问题 | ZY4IT</title>
+  <title>Hexo使用中遇到的小问题 | ZY4IT</title>
   
 
 
@@ -279,7 +287,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Hexo使用中遇到的问题</h1>
+          <h1 class="post-title" itemprop="name headline">Hexo使用中遇到的小问题</h1>
         
 
         <div class="post-meta">
@@ -307,7 +315,7 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-09-04T14:58:09+08:00">
+              <time title="更新于" itemprop="dateModified" datetime="2018-09-05T01:00:34+08:00">
                 2018-09-04
               </time>
             
@@ -347,6 +355,37 @@
           
 
           
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  115字
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  1分钟
+                </span>
+              
+            </div>
+          
 
           
 
@@ -369,6 +408,12 @@
 <blockquote>
 <h4 id="版权信息总是显示为yoursite-com"><a href="#版权信息总是显示为yoursite-com" class="headerlink" title="版权信息总是显示为yoursite.com"></a>版权信息总是显示为<code>yoursite.com</code></h4></blockquote>
 <p>将<code>hero/_config.yml</code>中的url的·<code>yoursite</code>更改即可</p>
+<blockquote>
+<h4 id="本地效果和发布效果不一致"><a href="#本地效果和发布效果不一致" class="headerlink" title="本地效果和发布效果不一致"></a>本地效果和发布效果不一致</h4></blockquote>
+<p>Mac用<code>Command+Shift+R</code>对Chrome强制刷新</p>
+<blockquote>
+<h4 id="hexo-s的一次报错"><a href="#hexo-s的一次报错" class="headerlink" title="hexo s的一次报错"></a>hexo s的一次报错</h4></blockquote>
+<p>在一次错误地修改了<code>.js</code>文件后，<code>hexo server</code>报错，报错内容指向<code>highlight.js</code>文件，解决方法：<br>修改<span id="inline-blue">站点配置文件</span>中的<code>auto_detect</code>为<code>false</code></p>
 
       
     </div>
@@ -389,7 +434,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="http://ts1989.cn/2018/09/04/ProblemsInHexo/" title="Hexo使用中遇到的问题">http://ts1989.cn/2018/09/04/ProblemsInHexo/</a>
+    <a href="http://ts1989.cn/2018/09/04/ProblemsInHexo/" title="Hexo使用中遇到的小问题">http://ts1989.cn/2018/09/04/ProblemsInHexo/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>
@@ -537,6 +582,13 @@
           </nav>
 
           
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
 
           
             <div class="links-of-author motion-element">
@@ -596,7 +648,7 @@ show_date_time();
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#标签和分类失败"><span class="nav-number">1.</span> <span class="nav-text">标签和分类失败</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#版权信息总是显示为yoursite-com"><span class="nav-number">2.</span> <span class="nav-text">版权信息总是显示为yoursite.com</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#标签和分类失败"><span class="nav-number">1.</span> <span class="nav-text">标签和分类失败</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#版权信息总是显示为yoursite-com"><span class="nav-number">2.</span> <span class="nav-text">版权信息总是显示为yoursite.com</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#本地效果和发布效果不一致"><span class="nav-number">3.</span> <span class="nav-text">本地效果和发布效果不一致</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#hexo-s的一次报错"><span class="nav-number">4.</span> <span class="nav-text">hexo s的一次报错</span></a></li></ol></div>
             
 
           </div>
@@ -813,6 +865,9 @@ show_date_time();
 
   
 
+  <!-- ColudTag彩色 -->
   <script type="text/javascript" src="/js/src/dytitle.js"></script>
+  <!-- 页面点击小红心 -->
+  <script type="text/javascript" src="/js/src/love.js"></script>
 </body>
 </html>

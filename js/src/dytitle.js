@@ -8,7 +8,7 @@ document.addEventListener('visibilitychange', function () {
     }
     else {
         $('[rel="shortcut icon"]').attr('href', "/favicon.png");
-        document.title = '♪(^∇^*)又好了。。。 ' + OriginTitile;
+        document.title = '♪(^∇^*)又好了' ;
         titleTime = setTimeout(function () {
             document.title = OriginTitile;
         }, 2000);

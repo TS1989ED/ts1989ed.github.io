@@ -82,14 +82,14 @@
 <meta name="description" content="修改文章页宽 打开\themes\next\source\css\ _variables\base.styl文件，找到以下字段并修改为合适的宽度: 1content-desktop-large = 1000px  修改小型代码块颜色 修改\themes\next\source\css\ _variables\base.styl文件，修改代码加入自定义颜色： 123456789$black-dee">
 <meta name="keywords" content="Hexo">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo超进阶操作">
+<meta property="og:title" content="Hexo进阶操作">
 <meta property="og:url" content="http://ts1989.cn/2018/09/04/AdvancedOperationInHexo/index.html">
 <meta property="og:site_name" content="ZY4IT">
 <meta property="og:description" content="修改文章页宽 打开\themes\next\source\css\ _variables\base.styl文件，找到以下字段并修改为合适的宽度: 1content-desktop-large = 1000px  修改小型代码块颜色 修改\themes\next\source\css\ _variables\base.styl文件，修改代码加入自定义颜色： 123456789$black-dee">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-09-04T05:47:15.062Z">
+<meta property="og:updated_time" content="2018-09-04T08:04:52.226Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo超进阶操作">
+<meta name="twitter:title" content="Hexo进阶操作">
 <meta name="twitter:description" content="修改文章页宽 打开\themes\next\source\css\ _variables\base.styl文件，找到以下字段并修改为合适的宽度: 1content-desktop-large = 1000px  修改小型代码块颜色 修改\themes\next\source\css\ _variables\base.styl文件，修改代码加入自定义颜色： 123456789$black-dee">
 
 
@@ -126,7 +126,7 @@
 
 
 
-  <title>Hexo超进阶操作 | ZY4IT</title>
+  <title>Hexo进阶操作 | ZY4IT</title>
   
 
 
@@ -139,7 +139,7 @@
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
-
+<script type="text/javascript" src="/js/src/dytitle.js"></script>
   
   
     
@@ -280,7 +280,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Hexo超进阶操作</h1>
+          <h1 class="post-title" itemprop="name headline">Hexo进阶操作</h1>
         
 
         <div class="post-meta">
@@ -308,12 +308,34 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-09-04T13:47:15+08:00">
+              <time title="更新于" itemprop="dateModified" datetime="2018-09-04T16:04:52+08:00">
                 2018-09-04
               </time>
             
           </span>
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/inbox/" itemprop="url" rel="index">
+                    <span itemprop="name">inbox</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -397,6 +419,23 @@
 <p>打开<code>/next/_config.yml</code>，添加如下代码</p>
 <figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># --------------------------------------------------------------</span></span><br><span class="line"><span class="comment"># background settings</span></span><br><span class="line"><span class="comment"># --------------------------------------------------------------</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># add canvas-nest effect</span></span><br><span class="line"><span class="comment"># see detail from https://github.com/hustcc/canvas-nest.js</span></span><br><span class="line"><span class="attr">canvas_nest:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
 <p>运行<code>hexo clean</code> 和 <code>hero g -d</code> 之后就可以在网页上看到效果了。</p>
+<blockquote>
+<h2 id="隐藏网页底部powered-by-hexo-强力驱动"><a href="#隐藏网页底部powered-by-hexo-强力驱动" class="headerlink" title="隐藏网页底部powered by hexo/强力驱动"></a>隐藏网页底部<code>powered by hexo/强力驱动</code></h2></blockquote>
+<p>打开<code>hexo/themes/next/layout/_partials/footer.swig</code></p>
+<p>找到下面这段代码，用第一行和最后一行注释掉即可</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!--</span></span><br><span class="line"><span class="comment">&lt;div class="powered-by"&gt;&#123;#</span></span><br><span class="line"><span class="comment">  #&#125;&#123;&#123; __('footer.powered', '') &#125;&#125;&#123;#</span></span><br><span class="line"><span class="comment">#&#125;&lt;/div&gt;</span></span><br><span class="line"><span class="comment">&#123;% endif %&#125;</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">&#123;% if theme.footer.powered and theme.footer.theme.enable %&#125;</span></span><br><span class="line"><span class="comment">  &lt;span class="post-meta-divider"&gt;|&lt;/span&gt;</span></span><br><span class="line"><span class="comment">&#123;% endif %&#125;</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">&#123;% if theme.footer.theme.enable %&#125;</span></span><br><span class="line"><span class="comment">  &lt;div class="theme-info"&gt;</span></span><br><span class="line"><span class="comment">  &#123;&#123; __('footer.theme') &#125;&#125;</span></span><br><span class="line"><span class="comment">  &lt;/div&gt;</span></span><br><span class="line"><span class="comment">--&gt;</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<h2 id="侧栏加入已运行时间"><a href="#侧栏加入已运行时间" class="headerlink" title="侧栏加入已运行时间"></a>侧栏加入已运行时间</h2></blockquote>
+<p><code>themes/next/layout/_custom</code>中添加<code>sidebar.swig</code>文件:</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"days"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="undefined">    function show_date_time()&#123;</span></span><br><span class="line"><span class="undefined">        window.setTimeout("show_date_time()", 1000);</span></span><br><span class="line"><span class="undefined">        BirthDay=new Date("01/10/2017 12:34:56");</span></span><br><span class="line"><span class="undefined">        today=new Date();</span></span><br><span class="line"><span class="undefined">        timeold=(today.getTime()-BirthDay.getTime());</span></span><br><span class="line"><span class="undefined">        sectimeold=timeold/1000</span></span><br><span class="line"><span class="undefined">        secondsold=Math.floor(sectimeold);</span></span><br><span class="line"><span class="undefined">        msPerDay=24*60*60*1000</span></span><br><span class="line"><span class="undefined">        e_daysold=timeold/msPerDay</span></span><br><span class="line"><span class="undefined">        daysold=Math.floor(e_daysold);</span></span><br><span class="line"><span class="undefined">        e_hrsold=(e_daysold-daysold)*24;</span></span><br><span class="line"><span class="undefined">        hrsold=setzero(Math.floor(e_hrsold));</span></span><br><span class="line"><span class="undefined">        e_minsold=(e_hrsold-hrsold)*60;</span></span><br><span class="line"><span class="undefined">        minsold=setzero(Math.floor((e_hrsold-hrsold)*60));</span></span><br><span class="line"><span class="undefined">        seconds=setzero(Math.floor((e_minsold-minsold)*60));</span></span><br><span class="line"><span class="undefined">        document.getElementById('days').innerHTML="已运行"+daysold+"天"+hrsold+"小时"+minsold+"分"+seconds+"秒";</span></span><br><span class="line"><span class="undefined">    &#125;</span></span><br><span class="line"><span class="undefined">function setzero(i)&#123;</span></span><br><span class="line"><span class="undefined">    if (i&lt;10)</span></span><br><span class="line"><span class="undefined">    &#123;i="0" + i&#125;;</span></span><br><span class="line"><span class="undefined">    return i;</span></span><br><span class="line"><span class="undefined">&#125;</span></span><br><span class="line"><span class="undefined">show_date_time();</span></span><br><span class="line"><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>在<code>themes/next/layout/_macro/sidebar.swig</code>中的<code>&lt;/section&gt;</code>之前添加:</p>
+<figure class="highlight django"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="xml"></span><span class="template-tag">&#123;% <span class="name"><span class="name">include</span></span> '../_custom/sidebar.swig' %&#125;</span><span class="xml"></span></span><br></pre></td></tr></table></figure>
+<p>设置时间样式：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">// 自定义的侧栏时间样式</span><br><span class="line"><span class="selector-id">#days</span> &#123;</span><br><span class="line">    <span class="attribute">display</span>: block;</span><br><span class="line">    <span class="attribute">color</span>: <span class="number">#fffa74</span>;</span><br><span class="line">    <span class="attribute">font-size</span>: <span class="number">14px</span>;</span><br><span class="line">    <span class="attribute">margin-top</span>: <span class="number">15px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<h2 id="更改tagcloud的颜色"><a href="#更改tagcloud的颜色" class="headerlink" title="更改tagcloud的颜色"></a>更改tagcloud的颜色</h2></blockquote>
+<p><code>themes/next/layout/page.swig</code>找到<code>tagcloud并替换</code>:</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;&#123; tagcloud(&#123;min_font: 13, max_font: 31, amount: 1000, color: true, start_color: '#9733EE', end_color: '#FF512F'&#125;) &#125;&#125;</span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -417,7 +456,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="http://ts1989.cn/2018/09/04/AdvancedOperationInHexo/" title="Hexo超进阶操作">http://ts1989.cn/2018/09/04/AdvancedOperationInHexo/</a>
+    <a href="http://ts1989.cn/2018/09/04/AdvancedOperationInHexo/" title="Hexo进阶操作">http://ts1989.cn/2018/09/04/AdvancedOperationInHexo/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>
@@ -454,6 +493,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/09/04/ProblemsInHexo/" rel="prev" title="Hexo使用中遇到的问题">
+                Hexo使用中遇到的问题 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -534,7 +577,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -584,7 +627,32 @@
           
           
 
-          
+          <div id="days"></div>
+    <script>
+    function show_date_time(){
+        window.setTimeout("show_date_time()", 1000);
+        BirthDay=new Date("09/01/2018 13:14:19");
+        today=new Date();
+        timeold=(today.getTime()-BirthDay.getTime());
+        sectimeold=timeold/1000
+        secondsold=Math.floor(sectimeold);
+        msPerDay=24*60*60*1000
+        e_daysold=timeold/msPerDay
+        daysold=Math.floor(e_daysold);
+        e_hrsold=(e_daysold-daysold)*24;
+        hrsold=setzero(Math.floor(e_hrsold));
+        e_minsold=(e_hrsold-hrsold)*60;
+        minsold=setzero(Math.floor((e_hrsold-hrsold)*60));
+        seconds=setzero(Math.floor((e_minsold-minsold)*60));
+        document.getElementById('days').innerHTML="已运行"+daysold+"天"+hrsold+"小时"+minsold+"分"+seconds+"秒";
+    }
+function setzero(i){
+    if (i<10)
+    {i="0" + i};
+    return i;
+}
+show_date_time();
+</script>
 
         </div>
       </section>
@@ -599,7 +667,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#修改文章页宽"><span class="nav-number">1.</span> <span class="nav-text">修改文章页宽</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#修改小型代码块颜色"><span class="nav-number">2.</span> <span class="nav-text">修改小型代码块颜色</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#添加文章结束标记"><span class="nav-number">3.</span> <span class="nav-text">添加文章结束标记</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#把侧边栏头像变成圆形，并且鼠标停留在上面发生旋转效果"><span class="nav-number">4.</span> <span class="nav-text">把侧边栏头像变成圆形，并且鼠标停留在上面发生旋转效果</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#修改链接文字样式"><span class="nav-number">5.</span> <span class="nav-text">修改链接文字样式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#为next主题的主页文章添加阴影效果"><span class="nav-number">6.</span> <span class="nav-text">为next主题的主页文章添加阴影效果</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#为next主题添加nest背景特效"><span class="nav-number">7.</span> <span class="nav-text">为next主题添加nest背景特效</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#特性"><span class="nav-number">7.0.1.</span> <span class="nav-text">特性</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#配置选项"><span class="nav-number">7.0.2.</span> <span class="nav-text">配置选项</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#修改-layout-swig"><span class="nav-number">7.0.3.</span> <span class="nav-text">修改_layout.swig</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#修改主题配置文件"><span class="nav-number">7.0.4.</span> <span class="nav-text">修改主题配置文件</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#修改文章页宽"><span class="nav-number">1.</span> <span class="nav-text">修改文章页宽</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#修改小型代码块颜色"><span class="nav-number">2.</span> <span class="nav-text">修改小型代码块颜色</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#添加文章结束标记"><span class="nav-number">3.</span> <span class="nav-text">添加文章结束标记</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#把侧边栏头像变成圆形，并且鼠标停留在上面发生旋转效果"><span class="nav-number">4.</span> <span class="nav-text">把侧边栏头像变成圆形，并且鼠标停留在上面发生旋转效果</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#修改链接文字样式"><span class="nav-number">5.</span> <span class="nav-text">修改链接文字样式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#为next主题的主页文章添加阴影效果"><span class="nav-number">6.</span> <span class="nav-text">为next主题的主页文章添加阴影效果</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#为next主题添加nest背景特效"><span class="nav-number">7.</span> <span class="nav-text">为next主题添加nest背景特效</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#特性"><span class="nav-number">7.0.1.</span> <span class="nav-text">特性</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#配置选项"><span class="nav-number">7.0.2.</span> <span class="nav-text">配置选项</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#修改-layout-swig"><span class="nav-number">7.0.3.</span> <span class="nav-text">修改_layout.swig</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#修改主题配置文件"><span class="nav-number">7.0.4.</span> <span class="nav-text">修改主题配置文件</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#隐藏网页底部powered-by-hexo-强力驱动"><span class="nav-number">8.</span> <span class="nav-text">隐藏网页底部powered by hexo/强力驱动</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#侧栏加入已运行时间"><span class="nav-number">9.</span> <span class="nav-text">侧栏加入已运行时间</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#更改tagcloud的颜色"><span class="nav-number">10.</span> <span class="nav-text">更改tagcloud的颜色</span></a></li></ol></div>
             
 
           </div>
@@ -629,7 +697,7 @@
 </div>
 
 
-  <div class="powered-by">Hosted by Coding Pages</div>
+  <!-- <div class="powered-by">Hosted by Coding Pages</div>
 
 
 
@@ -640,6 +708,7 @@
   <div class="theme-info">
   Hexo
   </div>
+  -->
 
 
 

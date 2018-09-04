@@ -138,7 +138,7 @@
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
-
+<script type="text/javascript" src="/js/src/dytitle.js"></script>
   
   
     
@@ -272,7 +272,7 @@
                 目前共计 2 个标签
             </div>
             <div class="tag-cloud-tags">
-              <a href="/tags/Hexo/" style="font-size: 12px; color: #ccc">Hexo</a> <a href="/tags/JavaEE/" style="font-size: 12px; color: #ccc">JavaEE</a>
+              <a href="/tags/Hexo/" style="font-size: 31px; color: #ff512f">Hexo</a> <a href="/tags/JavaEE/" style="font-size: 13px; color: #9733ee">JavaEE</a>
             </div>
           </div>
         
@@ -336,7 +336,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -386,7 +386,32 @@
           
           
 
-          
+          <div id="days"></div>
+    <script>
+    function show_date_time(){
+        window.setTimeout("show_date_time()", 1000);
+        BirthDay=new Date("09/01/2018 13:14:19");
+        today=new Date();
+        timeold=(today.getTime()-BirthDay.getTime());
+        sectimeold=timeold/1000
+        secondsold=Math.floor(sectimeold);
+        msPerDay=24*60*60*1000
+        e_daysold=timeold/msPerDay
+        daysold=Math.floor(e_daysold);
+        e_hrsold=(e_daysold-daysold)*24;
+        hrsold=setzero(Math.floor(e_hrsold));
+        e_minsold=(e_hrsold-hrsold)*60;
+        minsold=setzero(Math.floor((e_hrsold-hrsold)*60));
+        seconds=setzero(Math.floor((e_minsold-minsold)*60));
+        document.getElementById('days').innerHTML="已运行"+daysold+"天"+hrsold+"小时"+minsold+"分"+seconds+"秒";
+    }
+function setzero(i){
+    if (i<10)
+    {i="0" + i};
+    return i;
+}
+show_date_time();
+</script>
 
         </div>
       </section>
@@ -415,7 +440,7 @@
 </div>
 
 
-  <div class="powered-by">Hosted by Coding Pages</div>
+  <!-- <div class="powered-by">Hosted by Coding Pages</div>
 
 
 
@@ -426,6 +451,7 @@
   <div class="theme-info">
   Hexo
   </div>
+  -->
 
 
 

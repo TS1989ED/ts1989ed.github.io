@@ -5,9 +5,9 @@
   <subtitle>Viva La Vida</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://ts1989.cn/"/>
-  <updated>2018-09-04T17:00:34.588Z</updated>
-  <id>http://ts1989.cn/</id>
+  <link href="http://www.ts1989.cn/"/>
+  <updated>2018-09-05T01:26:22.438Z</updated>
+  <id>http://www.ts1989.cn/</id>
   
   <author>
     <name>T-Bag</name>
@@ -18,12 +18,12 @@
   
   <entry>
     <title>Hexo使用中遇到的小问题</title>
-    <link href="http://ts1989.cn/2018/09/04/ProblemsInHexo/"/>
-    <id>http://ts1989.cn/2018/09/04/ProblemsInHexo/</id>
+    <link href="http://www.ts1989.cn/2018/09/04/ProblemsInHexo/"/>
+    <id>http://www.ts1989.cn/2018/09/04/ProblemsInHexo/</id>
     <published>2018-09-04T14:47:09.000Z</published>
-    <updated>2018-09-04T17:00:34.588Z</updated>
+    <updated>2018-09-05T01:26:22.438Z</updated>
     
-    <content type="html"><![CDATA[<blockquote><h4 id="标签和分类失败"><a href="#标签和分类失败" class="headerlink" title="标签和分类失败"></a>标签和分类失败</h4></blockquote><p>在设置tags和categories时，<code>- Hexo</code>中间要加上空格</p><blockquote><h4 id="版权信息总是显示为yoursite-com"><a href="#版权信息总是显示为yoursite-com" class="headerlink" title="版权信息总是显示为yoursite.com"></a>版权信息总是显示为<code>yoursite.com</code></h4></blockquote><p>将<code>hero/_config.yml</code>中的url的·<code>yoursite</code>更改即可</p><blockquote><h4 id="本地效果和发布效果不一致"><a href="#本地效果和发布效果不一致" class="headerlink" title="本地效果和发布效果不一致"></a>本地效果和发布效果不一致</h4></blockquote><p>Mac用<code>Command+Shift+R</code>对Chrome强制刷新</p><blockquote><h4 id="hexo-s的一次报错"><a href="#hexo-s的一次报错" class="headerlink" title="hexo s的一次报错"></a>hexo s的一次报错</h4></blockquote><p>在一次错误地修改了<code>.js</code>文件后，<code>hexo server</code>报错，报错内容指向<code>highlight.js</code>文件，解决方法：<br>修改<span id="inline-blue">站点配置文件</span>中的<code>auto_detect</code>为<code>false</code></p>]]></content>
+    <content type="html"><![CDATA[<blockquote><h4 id="标签和分类失败"><a href="#标签和分类失败" class="headerlink" title="标签和分类失败"></a>标签和分类失败</h4></blockquote><p>在设置tags和categories时，<code>- Hexo</code>中间要加上空格</p><blockquote><h4 id="版权信息总是显示为yoursite-com"><a href="#版权信息总是显示为yoursite-com" class="headerlink" title="版权信息总是显示为yoursite.com"></a>版权信息总是显示为<code>yoursite.com</code></h4></blockquote><p>将<code>hero/_config.yml</code>中的url的·<code>yoursite</code>更改即可</p><blockquote><h4 id="本地效果和发布效果不一致"><a href="#本地效果和发布效果不一致" class="headerlink" title="本地效果和发布效果不一致"></a>本地效果和发布效果不一致</h4></blockquote><p>Mac用<code>Command+Shift+R</code>对Chrome强制刷新，短则几秒多则几分钟效果就更新了</p><blockquote><h4 id="hexo-s的一次报错"><a href="#hexo-s的一次报错" class="headerlink" title="hexo s的一次报错"></a>hexo s的一次报错</h4></blockquote><p>在一次错误地修改了<code>.js</code>文件后，<code>hexo server</code>报错，报错内容指向<code>highlight.js</code>文件，解决方法：<br>修改<span id="inline-blue">站点配置文件</span>中的<code>auto_detect</code>为<code>false</code></p>]]></content>
     
     <summary type="html">
     
@@ -36,17 +36,17 @@
     
     </summary>
     
-      <category term="inbox" scheme="http://ts1989.cn/categories/inbox/"/>
+      <category term="inbox" scheme="http://www.ts1989.cn/categories/inbox/"/>
     
     
-      <category term="Hexo" scheme="http://ts1989.cn/tags/Hexo/"/>
+      <category term="Hexo" scheme="http://www.ts1989.cn/tags/Hexo/"/>
     
   </entry>
   
   <entry>
     <title>Hexo进阶操作</title>
-    <link href="http://ts1989.cn/2018/09/04/AdvancedOperationInHexo/"/>
-    <id>http://ts1989.cn/2018/09/04/AdvancedOperationInHexo/</id>
+    <link href="http://www.ts1989.cn/2018/09/04/AdvancedOperationInHexo/"/>
+    <id>http://www.ts1989.cn/2018/09/04/AdvancedOperationInHexo/</id>
     <published>2018-09-04T09:50:03.000Z</published>
     <updated>2018-09-04T16:34:47.435Z</updated>
     
@@ -63,17 +63,17 @@
     
     </summary>
     
-      <category term="inbox" scheme="http://ts1989.cn/categories/inbox/"/>
+      <category term="inbox" scheme="http://www.ts1989.cn/categories/inbox/"/>
     
     
-      <category term="Hexo" scheme="http://ts1989.cn/tags/Hexo/"/>
+      <category term="Hexo" scheme="http://www.ts1989.cn/tags/Hexo/"/>
     
   </entry>
   
   <entry>
     <title>会话跟踪概述</title>
-    <link href="http://ts1989.cn/2018/08/31/hello-world/"/>
-    <id>http://ts1989.cn/2018/08/31/hello-world/</id>
+    <link href="http://www.ts1989.cn/2018/08/31/hello-world/"/>
+    <id>http://www.ts1989.cn/2018/08/31/hello-world/</id>
     <published>2018-08-31T07:15:06.964Z</published>
     <updated>2018-09-04T06:45:44.308Z</updated>
     
@@ -88,10 +88,10 @@
     
     </summary>
     
-      <category term="inbox" scheme="http://ts1989.cn/categories/inbox/"/>
+      <category term="inbox" scheme="http://www.ts1989.cn/categories/inbox/"/>
     
     
-      <category term="JavaEE" scheme="http://ts1989.cn/tags/JavaEE/"/>
+      <category term="JavaEE" scheme="http://www.ts1989.cn/tags/JavaEE/"/>
     
   </entry>
   

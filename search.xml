@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[Hexo使用中遇到的小问题]]></title>
     <url>%2F2018%2F09%2F04%2FProblemsInHexo%2F</url>
-    <content type="text"><![CDATA[标签和分类失败在设置tags和categories时，- Hexo中间要加上空格 版权信息总是显示为yoursite.com将hero/_config.yml中的url的·yoursite更改即可 本地效果和发布效果不一致Mac用Command+Shift+R对Chrome强制刷新，短则几秒多则几分钟效果就更新了 hexo s的一次报错在一次错误地修改了.js文件后，hexo server报错，报错内容指向highlight.js文件，解决方法：修改站点配置文件中的auto_detect为false 左边标题栏1～8##`大标题显示正常，后面显示为无序列表##大标题只能显示八个，暂未作出修改，但是改为###问题就解决了]]></content>
+    <content type="text"><![CDATA[标签和分类失败在设置tags和categories时，- Hexo中间要加上空格 版权信息总是显示为yoursite.com将hero/_config.yml中的url的·yoursite更改即可 本地效果和发布效果不一致Mac用Command+Shift+R对Chrome强制刷新，短则几秒多则几分钟效果就更新了 hexo s的一次报错在一次错误地修改了.js文件后，hexo server报错，报错内容指向highlight.js文件，解决方法：修改站点配置文件中的auto_detect为false 左边标题栏1～8##`大标题显示正常，后面显示为无序列表##大标题只能显示八个，暂未作出修改，但是改为###问题就解决了 关闭特定页面的Valine评论系统在hexo/source中的指定页面或文章的markdown语法的题头加入： comments: false]]></content>
       <categories>
         <category>inbox</category>
       </categories>

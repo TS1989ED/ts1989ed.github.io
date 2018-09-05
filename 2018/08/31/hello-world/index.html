@@ -96,7 +96,7 @@
 <meta property="og:description" content="会话跟踪什么是会话跟踪 一个会话从打开浏览器开始到关闭浏览器结束，这个过程中访问某个域名的所有操作称之为会话 会话（Session）是浏览器与服务器之间的一次连续的通讯过程 HTTP协议是无状态的，也就是说，一次请求结束后，HTTP协议就不再记录相关信息 实际应用中常常需要记住一些状态信息：登陆令牌（Token）现行常用的会话跟踪技术   URL方式，需要保存的信息直接追加到URL后 隐藏域方式：">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://www.justinmaller.com/img/projects/thumbnail/THUMB_Draconis_Diva_6prs.jpg">
-<meta property="og:updated_time" content="2018-09-05T01:52:14.239Z">
+<meta property="og:updated_time" content="2018-09-05T03:01:47.029Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="TEST">
 <meta name="twitter:description" content="会话跟踪什么是会话跟踪 一个会话从打开浏览器开始到关闭浏览器结束，这个过程中访问某个域名的所有操作称之为会话 会话（Session）是浏览器与服务器之间的一次连续的通讯过程 HTTP协议是无状态的，也就是说，一次请求结束后，HTTP协议就不再记录相关信息 实际应用中常常需要记住一些状态信息：登陆令牌（Token）现行常用的会话跟踪技术   URL方式，需要保存的信息直接追加到URL后 隐藏域方式：">
@@ -351,7 +351,7 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-09-05T09:52:14+08:00">
+              <time title="更新于" itemprop="dateModified" datetime="2018-09-05T11:01:47+08:00">
                 2018-09-05
               </time>
             
@@ -382,6 +382,16 @@
           
 
           
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/08/31/hello-world/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/08/31/hello-world/" itemprop="commentCount"></span>
+                </a>
+              </span>
             
           
 
@@ -441,7 +451,7 @@
           
             <div class="post-gallery-row">
               <a class="post-gallery-img fancybox"
-                 href="http://www.justinmaller.com/img/projects/thumbnail/THUMB_Draconis_Diva_6prs.jpg" rel="gallery_cjloixasy000cdn2vellg0631"
+                 href="http://www.justinmaller.com/img/projects/thumbnail/THUMB_Draconis_Diva_6prs.jpg" rel="gallery_cjloq8vux000auw2vid4ydb01"
                  itemscope itemtype="http://schema.org/ImageObject" itemprop="url">
                 <img src="http://www.justinmaller.com/img/projects/thumbnail/THUMB_Draconis_Diva_6prs.jpg" itemprop="contentUrl"/>
               </a>
@@ -847,6 +857,9 @@
           
 
   
+    <div class="comments" id="comments">
+    </div>
+  
 
 
 
@@ -1192,6 +1205,28 @@ show_date_time();
 
 
 
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'kevrYex6G3e21RjHyAoX4Gg5-gzGzoHsz',
+        appKey: 'B2E9vfYTAMav64EFCNa1fCiC',
+        placeholder: 'ヾﾉ≧∀≦)o关于上面的输入框～\n如果想要一个与众不同的头像，就输入一个与众不同的昵称(｡･ω･｡)\n如果想要一个收到回复的提醒，就输入一个自己常用的邮箱(/ω＼)',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
 
 
 

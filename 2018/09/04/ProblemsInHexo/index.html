@@ -95,7 +95,7 @@
 <meta property="og:site_name" content="ZY4IT">
 <meta property="og:description" content="标签和分类失败在设置tags和categories时，- Hexo中间要加上空格 版权信息总是显示为yoursite.com将hero/_config.yml中的url的·yoursite更改即可 本地效果和发布效果不一致Mac用Command+Shift+R对Chrome强制刷新，短则几秒多则几分钟效果就更新了 hexo s的一次报错在一次错误地修改了.js文件后，hexo server报错，报">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-09-05T02:09:31.240Z">
+<meta property="og:updated_time" content="2018-09-05T03:22:55.312Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo使用中遇到的小问题">
 <meta name="twitter:description" content="标签和分类失败在设置tags和categories时，- Hexo中间要加上空格 版权信息总是显示为yoursite.com将hero/_config.yml中的url的·yoursite更改即可 本地效果和发布效果不一致Mac用Command+Shift+R对Chrome强制刷新，短则几秒多则几分钟效果就更新了 hexo s的一次报错在一次错误地修改了.js文件后，hexo server报错，报">
@@ -349,7 +349,7 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-09-05T10:09:31+08:00">
+              <time title="更新于" itemprop="dateModified" datetime="2018-09-05T11:22:55+08:00">
                 2018-09-05
               </time>
             
@@ -380,6 +380,16 @@
           
 
           
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/09/04/ProblemsInHexo/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/09/04/ProblemsInHexo/" itemprop="commentCount"></span>
+                </a>
+              </span>
             
           
 
@@ -526,6 +536,9 @@
 
           
 
+  
+    <div class="comments" id="comments">
+    </div>
   
 
 
@@ -872,6 +885,28 @@ show_date_time();
 
 
 
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'kevrYex6G3e21RjHyAoX4Gg5-gzGzoHsz',
+        appKey: 'B2E9vfYTAMav64EFCNa1fCiC',
+        placeholder: 'ヾﾉ≧∀≦)o关于上面的输入框～\n如果想要一个与众不同的头像，就输入一个与众不同的昵称(｡･ω･｡)\n如果想要一个收到回复的提醒，就输入一个自己常用的邮箱(/ω＼)',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
 
 
 

@@ -381,6 +381,16 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/09/04/AdvancedOperationInHexo/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/09/04/AdvancedOperationInHexo/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -590,6 +600,9 @@
 
           
 
+  
+    <div class="comments" id="comments">
+    </div>
   
 
 
@@ -936,6 +949,28 @@ show_date_time();
 
 
 
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'kevrYex6G3e21RjHyAoX4Gg5-gzGzoHsz',
+        appKey: 'B2E9vfYTAMav64EFCNa1fCiC',
+        placeholder: 'ヾﾉ≧∀≦)o关于上面的输入框～\n如果想要一个与众不同的头像，就输入一个与众不同的昵称(｡･ω･｡)\n如果想要一个收到回复的提醒，就输入一个自己常用的邮箱(/ω＼)',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
 
 
 

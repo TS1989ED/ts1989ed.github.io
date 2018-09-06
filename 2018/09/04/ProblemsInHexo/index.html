@@ -95,7 +95,7 @@
 <meta property="og:site_name" content="ZY4IT">
 <meta property="og:description" content="标签和分类失败在设置tags和categories时，- Hexo中间要加上空格 版权信息总是显示为yoursite.com将hero/_config.yml中的url的·yoursite更改即可 本地效果和发布效果不一致Mac用Command+Shift+R对Chrome强制刷新，短则几秒多则几分钟效果就更新了 hexo s的一次报错在一次错误地修改了.js文件后，hexo server报错，报">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-09-05T06:45:06.984Z">
+<meta property="og:updated_time" content="2018-09-06T11:55:02.269Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo使用中遇到的小问题">
 <meta name="twitter:description" content="标签和分类失败在设置tags和categories时，- Hexo中间要加上空格 版权信息总是显示为yoursite.com将hero/_config.yml中的url的·yoursite更改即可 本地效果和发布效果不一致Mac用Command+Shift+R对Chrome强制刷新，短则几秒多则几分钟效果就更新了 hexo s的一次报错在一次错误地修改了.js文件后，hexo server报错，报">
@@ -349,8 +349,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-09-05T14:45:06+08:00">
-                2018-09-05
+              <time title="更新于" itemprop="dateModified" datetime="2018-09-06T19:55:02+08:00">
+                2018-09-06
               </time>
             
           </span>
@@ -720,6 +720,8 @@ show_date_time();
   </span>
   <span class="author" itemprop="copyrightHolder">T-Bag</span>
 
+  <p>Hosted by <a href="https://pages.coding.me" style="font-weight: bold">Coding Pages</a></p>
+  
   
 </div>
 
@@ -910,6 +912,13 @@ show_date_time();
         guest_info:guest,
         pageSize:'10' || 10,
     });
+    //新增以下代码即可，可以移除.info下所有子节点。
+    var infoEle = document.querySelector('#comments .info');
+    if (infoEle && infoEle.childNodes && infoEle.childNodes.length > 0){
+      infoEle.childNodes.forEach(function(item) {
+        item.parentNode.removeChild(item);
+      });
+    }
   </script>
 
 

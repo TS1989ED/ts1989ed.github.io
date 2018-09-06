@@ -451,7 +451,7 @@
           
             <div class="post-gallery-row">
               <a class="post-gallery-img fancybox"
-                 href="http://www.justinmaller.com/img/projects/thumbnail/THUMB_Draconis_Diva_6prs.jpg" rel="gallery_cjlos3lr400091z2vciorr2st"
+                 href="http://www.justinmaller.com/img/projects/thumbnail/THUMB_Draconis_Diva_6prs.jpg" rel="gallery_cjlqnzfvo000a892vphhti4w6"
                  itemscope itemtype="http://schema.org/ImageObject" itemprop="url">
                 <img src="http://www.justinmaller.com/img/projects/thumbnail/THUMB_Draconis_Diva_6prs.jpg" itemprop="contentUrl"/>
               </a>
@@ -1036,6 +1036,8 @@ show_date_time();
   </span>
   <span class="author" itemprop="copyrightHolder">T-Bag</span>
 
+  <p>Hosted by <a href="https://pages.coding.me" style="font-weight: bold">Coding Pages</a></p>
+  
   
 </div>
 
@@ -1226,6 +1228,13 @@ show_date_time();
         guest_info:guest,
         pageSize:'10' || 10,
     });
+    //新增以下代码即可，可以移除.info下所有子节点。
+    var infoEle = document.querySelector('#comments .info');
+    if (infoEle && infoEle.childNodes && infoEle.childNodes.length > 0){
+      infoEle.childNodes.forEach(function(item) {
+        item.parentNode.removeChild(item);
+      });
+    }
   </script>
 
 

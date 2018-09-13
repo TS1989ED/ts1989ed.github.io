@@ -1841,7 +1841,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #a411b6;
+  background: #006240;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3043,6 +3043,24 @@ h6 {
 body {
   color: #444;
   font-size: 16px;
+}
+.use-motion .post-body {
+  -webkit-transform: inherit !important;
+  -moz-transform: inherit !important;
+  -ms-transform: inherit !important;
+  -o-transform: inherit !important;
+  transform: inherit !important;
+}
+.posts-expand .post-title {
+  font-size: 26px;
+  font-weight: 700;
+}
+.posts-expand .post-meta .post-description {
+  font-style: italic;
+  font-size: 14px;
+  margin-top: 30px;
+  margin-bottom: 0px;
+  color: #666;
 }
 a#download {
   display: inline-block;

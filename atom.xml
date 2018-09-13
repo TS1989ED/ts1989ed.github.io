@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.ts1989.cn/"/>
-  <updated>2018-09-13T06:55:26.682Z</updated>
+  <updated>2018-09-13T07:18:46.878Z</updated>
   <id>http://www.ts1989.cn/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://www.ts1989.cn/2018/09/13/hello-world/"/>
     <id>http://www.ts1989.cn/2018/09/13/hello-world/</id>
     <published>2018-09-13T00:00:00.000Z</published>
-    <updated>2018-09-13T06:55:26.682Z</updated>
+    <updated>2018-09-13T07:18:46.878Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><div id="dplayer0" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"theme":"#FADFA3","video":{"url":"https://yixiuer.oss-cn-shanghai.aliyuncs.com/videos%2FNike%20-%20Dream%20Crazy.mp4"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script><a id="more"></a>]]></content>
     

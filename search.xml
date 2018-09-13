@@ -1,9 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[Hexo使用中遇到的小问题]]></title>
+    <title><![CDATA[Nike-Dream Crazy]]></title>
+    <url>%2F2018%2F09%2F13%2Fhello-world%2F</url>
+    <content type="text"><![CDATA[(function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"theme":"#FADFA3","video":{"url":"https://yixiuer.oss-cn-shanghai.aliyuncs.com/videos%2FNike%20-%20Dream%20Crazy.mp4"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()]]></content>
+      <categories>
+        <category>inbox</category>
+      </categories>
+      <tags>
+        <tag>JavaEE</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Hexo使用中遇到的小问题【加密】]]></title>
     <url>%2F2018%2F09%2F04%2FProblemsInHexo%2F</url>
-    <content type="text"><![CDATA[标签和分类失败在设置tags和categories时，- Hexo中间要加上空格 版权信息总是显示为yoursite.com将hero/_config.yml中的url的·yoursite更改即可 本地效果和发布效果不一致Mac用Command+Shift+R对Chrome强制刷新，短则几秒多则几分钟效果就更新了 hexo s的一次报错在一次错误地修改了.js文件后，hexo server报错，报错内容指向highlight.js文件，解决方法：修改站点配置文件中的auto_detect为false 左边标题栏1～8##`大标题显示正常，后面显示为无序列表##大标题只能显示八个，暂未作出修改，但是改为###问题就解决了 关闭特定页面的Valine评论系统在hexo/source中的指定页面或文章的front-matter中加入： comments: false]]></content>
+    <content type="text"><![CDATA[标签和分类失败在设置tags和categories时，- Hexo中间要加上空格 版权信息总是显示为yoursite.com将hero/_config.yml中的url的·yoursite更改即可 本地效果和发布效果不一致Mac用Command+Shift+R对Chrome强制刷新，短则几秒多则几分钟效果就更新了 hexo s的一次报错在一次错误地修改了.js文件后，hexo server报错，报错内容指向highlight.js文件，解决方法：修改站点配置文件中的auto_detect为false 左边标题栏1～8##`大标题显示正常，后面显示为无序列表##大标题只能显示八个，暂未作出修改，但是改为###问题就解决了 关闭特定页面的Valine评论系统在hexo/source中的指定页面或文章的front-matter中加入： comments: false 文章摘要同时显示description和&lt;!--more--&gt;的摘要在主题配置文件中 excerpt_description: true 设置为false]]></content>
       <categories>
         <category>inbox</category>
       </categories>
@@ -20,17 +31,6 @@
       </categories>
       <tags>
         <tag>Hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[Nike-Dream Crazy]]></title>
-    <url>%2F2018%2F08%2F31%2Fhello-world%2F</url>
-    <content type="text"><![CDATA[(function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"theme":"#FADFA3","loop":true,"video":{"url":"https://yixiuer.oss-cn-shanghai.aliyuncs.com/videos%2FNike%20-%20Dream%20Crazy.mp4"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()]]></content>
-      <categories>
-        <category>inbox</category>
-      </categories>
-      <tags>
-        <tag>JavaEE</tag>
       </tags>
   </entry>
 </search>

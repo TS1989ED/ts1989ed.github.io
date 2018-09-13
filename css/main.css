@@ -1841,7 +1841,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #006240;
+  background: #c96fff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3061,6 +3061,9 @@ body {
   margin-top: 30px;
   margin-bottom: 0px;
   color: #666;
+}
+.posts-expand .post-meta {
+  margin: 10px 0px 20px 0px;
 }
 a#download {
   display: inline-block;

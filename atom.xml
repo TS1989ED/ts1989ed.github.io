@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.ts1989.cn/"/>
-  <updated>2018-09-13T08:47:40.379Z</updated>
+  <updated>2018-09-13T10:29:30.643Z</updated>
   <id>http://www.ts1989.cn/</id>
   
   <author>
@@ -21,13 +21,13 @@
     <link href="http://www.ts1989.cn/2018/09/13/hello-world/"/>
     <id>http://www.ts1989.cn/2018/09/13/hello-world/</id>
     <published>2018-09-13T00:00:00.000Z</published>
-    <updated>2018-09-13T08:47:40.379Z</updated>
+    <updated>2018-09-13T10:29:30.643Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><div id="dplayer0" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"theme":"#FADFA3","preload":"auto","video":{"url":"https://yixiuer.oss-cn-shanghai.aliyuncs.com/videos%2FNike%20-%20Dream%20Crazy.mp4"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script><a id="more"></a><div id="dplayer1" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer1"),"theme":"#FADFA3","preload":"auto","video":{"url":"https://yixiuer.oss-cn-shanghai.aliyuncs.com/videos/XXL%20-%20Sport%20Unites%20All.mp4"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><div id="dplayer0" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"theme":"#FADFA3","preload":"auto","video":{"url":"https://yixiuer.oss-cn-shanghai.aliyuncs.com/videos%2FNike%20-%20Dream%20Crazy.mp4"},"danmaku":{"api":"https://api.prprpr.me/dplayer/"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script><a id="more"></a><div id="dplayer1" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer1"),"theme":"#FADFA3","preload":"auto","video":{"url":"https://yixiuer.oss-cn-shanghai.aliyuncs.com/videos/XXL%20-%20Sport%20Unites%20All.mp4"},"danmaku":{"api":"https://api.prprpr.me/dplayer/"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script>]]></content>
     
     <summary type="html">
     
-      &lt;div id=&quot;dplayer0&quot; class=&quot;dplayer hexo-tag-dplayer-mark&quot; style=&quot;margin-bottom: 20px;&quot;&gt;&lt;/div&gt;&lt;script&gt;(function(){var player = new DPlayer({&quot;container&quot;:document.getElementById(&quot;dplayer0&quot;),&quot;theme&quot;:&quot;#FADFA3&quot;,&quot;preload&quot;:&quot;auto&quot;,&quot;video&quot;:{&quot;url&quot;:&quot;https://yixiuer.oss-cn-shanghai.aliyuncs.com/videos%2FNike%20-%20Dream%20Crazy.mp4&quot;}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()&lt;/script&gt;
+      &lt;div id=&quot;dplayer0&quot; class=&quot;dplayer hexo-tag-dplayer-mark&quot; style=&quot;margin-bottom: 20px;&quot;&gt;&lt;/div&gt;&lt;script&gt;(function(){var player = new DPlayer({&quot;container&quot;:document.getElementById(&quot;dplayer0&quot;),&quot;theme&quot;:&quot;#FADFA3&quot;,&quot;preload&quot;:&quot;auto&quot;,&quot;video&quot;:{&quot;url&quot;:&quot;https://yixiuer.oss-cn-shanghai.aliyuncs.com/videos%2FNike%20-%20Dream%20Crazy.mp4&quot;},&quot;danmaku&quot;:{&quot;api&quot;:&quot;https://api.prprpr.me/dplayer/&quot;}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()&lt;/script&gt;
     
     </summary>
     

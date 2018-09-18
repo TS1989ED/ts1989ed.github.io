@@ -90,15 +90,15 @@
 <meta name="description" content="Species to survive, is not the most strong, is not the most intelligent， but those who make a rapid response to change.">
 <meta name="keywords" content="IT,Algorithm">
 <meta property="og:type" content="article">
-<meta property="og:title" content="遗传算法初识">
+<meta property="og:title" content="初识遗传算法">
 <meta property="og:url" content="http://www.ts1989.cn/2018/09/18/GeneticAlgorithm01/index.html">
 <meta property="og:site_name" content="TS1989">
 <meta property="og:description" content="Species to survive, is not the most strong, is not the most intelligent， but those who make a rapid response to change.">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://ts1989ed.oss-cn-shenzhen.aliyuncs.com/Picture/Notes/FuncImage.png">
-<meta property="og:updated_time" content="2018-09-18T06:44:48.385Z">
+<meta property="og:updated_time" content="2018-09-18T07:22:07.022Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="遗传算法初识">
+<meta name="twitter:title" content="初识遗传算法">
 <meta name="twitter:description" content="Species to survive, is not the most strong, is not the most intelligent， but those who make a rapid response to change.">
 <meta name="twitter:image" content="http://ts1989ed.oss-cn-shenzhen.aliyuncs.com/Picture/Notes/FuncImage.png">
 
@@ -136,7 +136,7 @@
 
 
 
-  <title>遗传算法初识 | TS1989</title>
+  <title>初识遗传算法 | TS1989</title>
   
 
 
@@ -323,7 +323,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">遗传算法初识</h1>
+          <h1 class="post-title" itemprop="name headline">初识遗传算法</h1>
         
 
         <div class="post-meta">
@@ -351,7 +351,7 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-09-18T14:44:48+08:00">
+              <time title="更新于" itemprop="dateModified" datetime="2018-09-18T15:22:07+08:00">
                 2018-09-18
               </time>
             
@@ -411,7 +411,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  950字
+                  1,502字
                 </span>
               
 
@@ -427,7 +427,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  3分钟
+                  5分钟
                 </span>
               
             </div>
@@ -534,6 +534,33 @@ width: 75%;
 </code></pre><p><img src="http://ts1989ed.oss-cn-shenzhen.aliyuncs.com/Picture/Notes/FuncImage.png" alt="函数大致图像"></p>
 <p>那么如何通过遗传算法找到这个函数的最大值呢？</p>
 <p>事实上，不管一个函数的形状多么奇怪，遗传算法都能在很短的时间内找到它在一个区间内的(近似)最大值。</p>
+<p>👉<a href="https://www.zhihu.com/question/23293449/answer/120220974" target="_blank" rel="noopener">具体分析</a></p>
+<h3 id="遗传算法思想"><a href="#遗传算法思想" class="headerlink" title="遗传算法思想"></a>遗传算法思想</h3><p>GA的组成：</p>
+<ul>
+<li>编码(产生初始种群)👉创造染色体</li>
+<li>个体👉种群</li>
+<li>适应度函数</li>
+<li>遗传算子(选择、交叉、变异)</li>
+<li>运行参数<ul>
+<li>种群大小</li>
+<li>染色体长度</li>
+<li>最大迭代次数</li>
+<li>交叉概率</li>
+<li>变异概率</li>
+<li>是否选择精英操作</li>
+</ul>
+</li>
+</ul>
+<h3 id="GA算法特点"><a href="#GA算法特点" class="headerlink" title="GA算法特点"></a>GA算法特点</h3><h4 id="遗传算法的优点"><a href="#遗传算法的优点" class="headerlink" title="遗传算法的优点"></a>遗传算法的优点</h4><ul>
+<li>群体搜索，易于并行化处理；</li>
+<li>不是盲目穷举，而是启发式搜索；</li>
+<li>适应度函数不受连续、可微等条件的约束，适用范围很广。</li>
+<li>容易实现。一旦有了一个遗传算法的程序，如果想解决一个新的问题，只需针对新的问题重新进行基因编码就行；如果编码方法也相同，那只需要改变一下适应度函数就可以了。</li>
+</ul>
+<h4 id="遗传算法的缺点"><a href="#遗传算法的缺点" class="headerlink" title="遗传算法的缺点"></a>遗传算法的缺点</h4><ul>
+<li>全局搜索能力不强,很容易陷入局部最优解跳不出来；(可结合SA进行改进,因为SA在理率上是100%得到全局最优的,但搜索代价高)</li>
+</ul>
+<p>将遗传算法用于解决各种实际问题后，人们发现遣传算法也会由于各种原因过早向目标函数的局部最优解收敛，从而很难找到全局最优解。其中有些是由于目标函数的特性造成的，例如函数具有欺骗性，不满足构造模块假说等等；另外一些则是由于算法设计不当。为此，不断有人对遗传算法提出各种各样的改进方案。例如：针对原先的定长二进制编码方案；提出了动态编码、实数编码等改进方案；针对按比例的选择机制，提出了竞争选择、按续挑选等改进方案；针对原先的一点交算子，提出了两点交、多点交、均匀交等算子；针对原先遗传算法各控制参数在进化过程中不变的情况，提出了退化遗传算法、自适应遗传算法等。另外，针对不同问题还出现了分布式遗传算法、并行遗传算法等等。</p>
 
       
     </div>
@@ -771,7 +798,7 @@ show_date_time();
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#什么是遗传算法？"><span class="nav-number">1.</span> <span class="nav-text">什么是遗传算法？</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#遗传算法的由来"><span class="nav-number">1.1.</span> <span class="nav-text">遗传算法的由来</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#定义："><span class="nav-number">1.2.</span> <span class="nav-text">定义：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#相关术语"><span class="nav-number">1.3.</span> <span class="nav-text">相关术语</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#遗传算法的应用"><span class="nav-number">1.4.</span> <span class="nav-text">遗传算法的应用</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#一个简单的例子"><span class="nav-number">2.</span> <span class="nav-text">一个简单的例子</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#什么是遗传算法？"><span class="nav-number">1.</span> <span class="nav-text">什么是遗传算法？</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#遗传算法的由来"><span class="nav-number">1.1.</span> <span class="nav-text">遗传算法的由来</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#定义："><span class="nav-number">1.2.</span> <span class="nav-text">定义：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#相关术语"><span class="nav-number">1.3.</span> <span class="nav-text">相关术语</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#遗传算法的应用"><span class="nav-number">1.4.</span> <span class="nav-text">遗传算法的应用</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#一个简单的例子"><span class="nav-number">2.</span> <span class="nav-text">一个简单的例子</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#遗传算法思想"><span class="nav-number">3.</span> <span class="nav-text">遗传算法思想</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#GA算法特点"><span class="nav-number">4.</span> <span class="nav-text">GA算法特点</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#遗传算法的优点"><span class="nav-number">4.1.</span> <span class="nav-text">遗传算法的优点</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#遗传算法的缺点"><span class="nav-number">4.2.</span> <span class="nav-text">遗传算法的缺点</span></a></li></ol></li></ol></div>
             
 
           </div>

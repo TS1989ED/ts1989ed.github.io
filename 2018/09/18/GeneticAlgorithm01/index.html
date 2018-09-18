@@ -87,19 +87,19 @@
 
 
 
-<meta name="description" content="遗传算法（Genetic Algorithm, GA）是模仿自然界生物进化机制发展起来的随机全局搜索和优化方法，借鉴了达尔文的进化论和孟德尔的遗传学说。">
+<meta name="description" content="Species to survive, is not the most strong, is not the most intelligent， but those who make a rapid response to change.">
 <meta name="keywords" content="IT,Algorithm">
 <meta property="og:type" content="article">
 <meta property="og:title" content="遗传算法初识">
 <meta property="og:url" content="http://www.ts1989.cn/2018/09/18/GeneticAlgorithm01/index.html">
 <meta property="og:site_name" content="TS1989">
-<meta property="og:description" content="遗传算法（Genetic Algorithm, GA）是模仿自然界生物进化机制发展起来的随机全局搜索和优化方法，借鉴了达尔文的进化论和孟德尔的遗传学说。">
+<meta property="og:description" content="Species to survive, is not the most strong, is not the most intelligent， but those who make a rapid response to change.">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://ts1989ed.oss-cn-shenzhen.aliyuncs.com/Picture/Notes/FuncImage.png">
-<meta property="og:updated_time" content="2018-09-18T04:45:24.289Z">
+<meta property="og:updated_time" content="2018-09-18T06:44:48.385Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="遗传算法初识">
-<meta name="twitter:description" content="遗传算法（Genetic Algorithm, GA）是模仿自然界生物进化机制发展起来的随机全局搜索和优化方法，借鉴了达尔文的进化论和孟德尔的遗传学说。">
+<meta name="twitter:description" content="Species to survive, is not the most strong, is not the most intelligent， but those who make a rapid response to change.">
 <meta name="twitter:image" content="http://ts1989ed.oss-cn-shenzhen.aliyuncs.com/Picture/Notes/FuncImage.png">
 
 
@@ -351,7 +351,7 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-09-18T12:45:24+08:00">
+              <time title="更新于" itemprop="dateModified" datetime="2018-09-18T14:44:48+08:00">
                 2018-09-18
               </time>
             
@@ -411,7 +411,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  639字
+                  950字
                 </span>
               
 
@@ -427,7 +427,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  2分钟
+                  3分钟
                 </span>
               
             </div>
@@ -435,7 +435,7 @@
 
           
               <div class="post-description">
-                  遗传算法（Genetic Algorithm, GA）是模仿自然界生物进化机制发展起来的随机全局搜索和优化方法，借鉴了达尔文的进化论和孟德尔的遗传学说。
+                  Species to survive, is not the most strong, is not the most intelligent， but those who make a rapid response to change.
               </div>
           
 
@@ -456,8 +456,22 @@
 <a id="more"></a>
 <p id="div-border-left-blue"><a href="https://github.com/Code-Bullet/Google-Chrome-Dino-Game-AI" target="_blank" rel="noopener">Github源码链接</a></p>
 
-<h3 id="什么是遗传算法？"><a href="#什么是遗传算法？" class="headerlink" title="什么是遗传算法？"></a>什么是遗传算法？</h3><h4 id="定义："><a href="#定义：" class="headerlink" title="定义："></a>定义：</h4><p>&emsp;&emsp;遗传算法（Genetic Algorithm, GA）起源于对生物系统所进行的计算机模拟研究。它是模仿自然界生物进化机制发展起来的随机全局搜索和优化方法，借鉴了达尔文的进化论和孟德尔的遗传学说。其本质是一种高效、并行、全局搜索的方法，能在搜索过程中自动获取和积累有关搜索空间的知识，并自适应地控制搜索过程以求得最佳解。</p>
-<h5 id="相关术语"><a href="#相关术语" class="headerlink" title="相关术语"></a>相关术语</h5><table>
+<h3 id="什么是遗传算法？"><a href="#什么是遗传算法？" class="headerlink" title="什么是遗传算法？"></a>什么是遗传算法？</h3><h4 id="遗传算法的由来"><a href="#遗传算法的由来" class="headerlink" title="遗传算法的由来"></a>遗传算法的由来</h4><blockquote>
+<p>Species to survive, is not the most strong, is not the most intelligent， but those who make a rapid response to change.</p>
+</blockquote>
+<p>物尽天择，适者生存。</p>
+<p>查尔斯达尔文在一百多年前提出的“生物进化论”，他证明生物的起源是在遗传、变异、生存斗争和自然选择中，从简单到复杂、从低等到高等不断地发展变化而来的。<br>达尔文的进化论给美国的科学家霍兰德留下了深刻的印象，他从计算机角度思考了这个问题，也就是遗传算法的由来。<br>遗传算法也便继承了“进化论”的思想，将需要解决的问题模拟成一个生物进化的过程，通过复制、交叉、突变等操作产生下一代的解，并逐步淘汰适应度(Fitness)低的解，经过N代自然选择后，会进化出适应度函数值很高的个体。</p>
+<h4 id="定义："><a href="#定义：" class="headerlink" title="定义："></a>定义：</h4><p>&emsp;&emsp;遗传算法（Genetic Algorithm, GA）起源于对生物系统所进行的计算机模拟研究。它是模仿自然界生物进化机制发展起来的随机全局搜索和优化方法，借鉴了达尔文的进化论和孟德尔的遗传学说。其本质是一种高效、并行、全局搜索的方法，能在搜索过程中自动获取和积累有关搜索空间的知识，并自适应地控制搜索过程以求得最佳解。</p>
+<h4 id="相关术语"><a href="#相关术语" class="headerlink" title="相关术语"></a>相关术语</h4><style>
+table th:nth-of-type(1){
+width: 25%;
+}
+table th:nth-of-type(2){
+width: 75%;
+}
+</style>
+
+<table>
 <thead>
 <tr>
 <th style="text-align:left">相关术语</th>
@@ -515,9 +529,11 @@
 </tr>
 </tbody>
 </table>
-<h5 id="遗传算法的应用"><a href="#遗传算法的应用" class="headerlink" title="遗传算法的应用"></a>遗传算法的应用</h5><p>遗传算法的有趣应用很多，诸如寻路问题，8数码问题，囚犯困境，动作控制，找圆心问题（在一个不规则的多边形中，寻找一个包含在该多边形内的最大圆圈的圆心），TSP问题，生产调度问题，人工生命模拟等。</p>
-<h5 id="一个简单的例子"><a href="#一个简单的例子" class="headerlink" title="一个简单的例子"></a>一个简单的例子</h5><pre><code>求解函数 f(x) = x + 10*sin(5*x) + 7*cos(4*x) 在区间[0,9]的最大值
+<h4 id="遗传算法的应用"><a href="#遗传算法的应用" class="headerlink" title="遗传算法的应用"></a>遗传算法的应用</h4><p>遗传算法的有趣应用很多，诸如寻路问题，8数码问题，囚犯困境，动作控制，找圆心问题（在一个不规则的多边形中，寻找一个包含在该多边形内的最大圆圈的圆心），TSP问题，生产调度，模式识别，神经网络，自适应控制等。</p>
+<h3 id="一个简单的例子"><a href="#一个简单的例子" class="headerlink" title="一个简单的例子"></a>一个简单的例子</h3><pre><code>求解函数 f(x) = x + 10*sin(5*x) + 7*cos(4*x) 在区间[0,9]的最大值
 </code></pre><p><img src="http://ts1989ed.oss-cn-shenzhen.aliyuncs.com/Picture/Notes/FuncImage.png" alt="函数大致图像"></p>
+<p>那么如何通过遗传算法找到这个函数的最大值呢？</p>
+<p>事实上，不管一个函数的形状多么奇怪，遗传算法都能在很短的时间内找到它在一个区间内的(近似)最大值。</p>
 
       
     </div>
@@ -755,7 +771,7 @@ show_date_time();
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#什么是遗传算法？"><span class="nav-number">1.</span> <span class="nav-text">什么是遗传算法？</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#定义："><span class="nav-number">1.1.</span> <span class="nav-text">定义：</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#相关术语"><span class="nav-number">1.1.1.</span> <span class="nav-text">相关术语</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#遗传算法的应用"><span class="nav-number">1.1.2.</span> <span class="nav-text">遗传算法的应用</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#一个简单的例子"><span class="nav-number">1.1.3.</span> <span class="nav-text">一个简单的例子</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#什么是遗传算法？"><span class="nav-number">1.</span> <span class="nav-text">什么是遗传算法？</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#遗传算法的由来"><span class="nav-number">1.1.</span> <span class="nav-text">遗传算法的由来</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#定义："><span class="nav-number">1.2.</span> <span class="nav-text">定义：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#相关术语"><span class="nav-number">1.3.</span> <span class="nav-text">相关术语</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#遗传算法的应用"><span class="nav-number">1.4.</span> <span class="nav-text">遗传算法的应用</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#一个简单的例子"><span class="nav-number">2.</span> <span class="nav-text">一个简单的例子</span></a></li></ol></div>
             
 
           </div>

@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[遗传算法初识]]></title>
     <url>%2F2018%2F09%2F18%2FGeneticAlgorithm01%2F</url>
-    <content type="text"><![CDATA[(function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"video":{"url":"http://ts1989ed.oss-cn-shenzhen.aliyuncs.com/Videos/AI%20learns%20to%20play%20Google%20Chrome%20Dinosaur%20Game%20--%20Can%20you%20beat%20it.mp4"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})() Github源码链接 什么是遗传算法？定义：&emsp;&emsp;遗传算法（Genetic Algorithm, GA）起源于对生物系统所进行的计算机模拟研究。它是模仿自然界生物进化机制发展起来的随机全局搜索和优化方法，借鉴了达尔文的进化论和孟德尔的遗传学说。其本质是一种高效、并行、全局搜索的方法，能在搜索过程中自动获取和积累有关搜索空间的知识，并自适应地控制搜索过程以求得最佳解。 相关术语 相关术语 解释 基因型(genotype) 性状染色体的内部表现 表现型(phenotype) 染色体决定的性状的外部表现，或者说，根据基因型形成的个体的外部表现 进化(evolution) 种群逐渐适应生存环境，品质不断得到改良。生物的进化是以种群的形式进行的 适应度(fitness) 度量某个物种对于生存环境的适应程度 选择(selection) 以一定的概率从种群中选择若干个个体。一般，选择过程是一种基于适应度的优胜劣汰的过程 复制(reproduction) 细胞分裂时，遗传物质DNA通过复制而转移到新产生的细胞中，新细胞就继承了旧细胞的基因。 交叉(crossover) 两个染色体的某一相同位置处DNA被切断，前后两串分别交叉组合形成两个新的染色体。也称基因重组或杂交 变异(mutation) 复制时可能（很小的概率）产生某些复制差错，变异产生新的染色体，表现出新的性状 编码(coding) DNA中遗传信息在一个长链上按一定的模式排列。遗传编码可看作从表现型到基因型的映射 解码(decoding) 基因型到表现型的映射 个体（individual） 指染色体带有特征的实体 种群（population） 个体的集合，该集合内个体数称为种群的大小 遗传算法的应用遗传算法的有趣应用很多，诸如寻路问题，8数码问题，囚犯困境，动作控制，找圆心问题（在一个不规则的多边形中，寻找一个包含在该多边形内的最大圆圈的圆心），TSP问题，生产调度问题，人工生命模拟等。 一个简单的例子求解函数 f(x) = x + 10*sin(5*x) + 7*cos(4*x) 在区间[0,9]的最大值]]></content>
+    <content type="text"><![CDATA[(function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"video":{"url":"http://ts1989ed.oss-cn-shenzhen.aliyuncs.com/Videos/AI%20learns%20to%20play%20Google%20Chrome%20Dinosaur%20Game%20--%20Can%20you%20beat%20it.mp4"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})() Github源码链接 什么是遗传算法？遗传算法的由来 Species to survive, is not the most strong, is not the most intelligent， but those who make a rapid response to change. 物尽天择，适者生存。 查尔斯达尔文在一百多年前提出的“生物进化论”，他证明生物的起源是在遗传、变异、生存斗争和自然选择中，从简单到复杂、从低等到高等不断地发展变化而来的。达尔文的进化论给美国的科学家霍兰德留下了深刻的印象，他从计算机角度思考了这个问题，也就是遗传算法的由来。遗传算法也便继承了“进化论”的思想，将需要解决的问题模拟成一个生物进化的过程，通过复制、交叉、突变等操作产生下一代的解，并逐步淘汰适应度(Fitness)低的解，经过N代自然选择后，会进化出适应度函数值很高的个体。 定义：&emsp;&emsp;遗传算法（Genetic Algorithm, GA）起源于对生物系统所进行的计算机模拟研究。它是模仿自然界生物进化机制发展起来的随机全局搜索和优化方法，借鉴了达尔文的进化论和孟德尔的遗传学说。其本质是一种高效、并行、全局搜索的方法，能在搜索过程中自动获取和积累有关搜索空间的知识，并自适应地控制搜索过程以求得最佳解。 相关术语 table th:nth-of-type(1){ width: 25%; } table th:nth-of-type(2){ width: 75%; } 相关术语 解释 基因型(genotype) 性状染色体的内部表现 表现型(phenotype) 染色体决定的性状的外部表现，或者说，根据基因型形成的个体的外部表现 进化(evolution) 种群逐渐适应生存环境，品质不断得到改良。生物的进化是以种群的形式进行的 适应度(fitness) 度量某个物种对于生存环境的适应程度 选择(selection) 以一定的概率从种群中选择若干个个体。一般，选择过程是一种基于适应度的优胜劣汰的过程 复制(reproduction) 细胞分裂时，遗传物质DNA通过复制而转移到新产生的细胞中，新细胞就继承了旧细胞的基因。 交叉(crossover) 两个染色体的某一相同位置处DNA被切断，前后两串分别交叉组合形成两个新的染色体。也称基因重组或杂交 变异(mutation) 复制时可能（很小的概率）产生某些复制差错，变异产生新的染色体，表现出新的性状 编码(coding) DNA中遗传信息在一个长链上按一定的模式排列。遗传编码可看作从表现型到基因型的映射 解码(decoding) 基因型到表现型的映射 个体（individual） 指染色体带有特征的实体 种群（population） 个体的集合，该集合内个体数称为种群的大小 遗传算法的应用遗传算法的有趣应用很多，诸如寻路问题，8数码问题，囚犯困境，动作控制，找圆心问题（在一个不规则的多边形中，寻找一个包含在该多边形内的最大圆圈的圆心），TSP问题，生产调度，模式识别，神经网络，自适应控制等。 一个简单的例子求解函数 f(x) = x + 10*sin(5*x) + 7*cos(4*x) 在区间[0,9]的最大值 那么如何通过遗传算法找到这个函数的最大值呢？ 事实上，不管一个函数的形状多么奇怪，遗传算法都能在很短的时间内找到它在一个区间内的(近似)最大值。]]></content>
       <categories>
         <category>Notes</category>
       </categories>
@@ -27,7 +27,7 @@
   <entry>
     <title><![CDATA[血小板まとめ]]></title>
     <url>%2F2018%2F09%2F14%2FHataraku-Cute%2F</url>
-    <content type="text"><![CDATA[(function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"video":{"url":"http://ts1989ed.oss-cn-shenzhen.aliyuncs.com/%E3%80%8C%E3%81%8A%E7%96%B2%E3%82%8C%E6%A7%98%E3%81%A6%E3%82%99%E3%81%99%EF%BC%81%E3%80%8D%E8%A1%80%E5%B0%8F%E6%9D%BF%E3%81%AE%E7%AC%91%E9%A1%94%E3%81%8B%E3%82%99%E5%8F%AF%E6%84%9B%E3%81%99%E3%81%8D%E3%82%99%E3%82%8B%E3%80%90%E3%81%AF%E3%81%9F%E3%82%89%E3%81%8F%E7%B4%B0%E8%83%9E%E3%80%91Hataraku%20Saibou%20Cute%20Moments.mp4"},"danmaku":{"id":"Platelet","api":"https://api.prprpr.me/dplayer3/"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()]]></content>
+    <content type="text"><![CDATA[(function(){var player = new DPlayer({"container":document.getElementById("dplayer1"),"video":{"url":"http://ts1989ed.oss-cn-shenzhen.aliyuncs.com/%E3%80%8C%E3%81%8A%E7%96%B2%E3%82%8C%E6%A7%98%E3%81%A6%E3%82%99%E3%81%99%EF%BC%81%E3%80%8D%E8%A1%80%E5%B0%8F%E6%9D%BF%E3%81%AE%E7%AC%91%E9%A1%94%E3%81%8B%E3%82%99%E5%8F%AF%E6%84%9B%E3%81%99%E3%81%8D%E3%82%99%E3%82%8B%E3%80%90%E3%81%AF%E3%81%9F%E3%82%89%E3%81%8F%E7%B4%B0%E8%83%9E%E3%80%91Hataraku%20Saibou%20Cute%20Moments.mp4"},"danmaku":{"id":"Platelet","api":"https://api.prprpr.me/dplayer3/"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()]]></content>
       <categories>
         <category>Video</category>
       </categories>
@@ -51,7 +51,7 @@
   <entry>
     <title><![CDATA[Nike-Dream Crazy]]></title>
     <url>%2F2018%2F09%2F14%2FNike-Dream-Crazy%2F</url>
-    <content type="text"><![CDATA[(function(){var player = new DPlayer({"container":document.getElementById("dplayer1"),"video":{"url":"http://ts1989ed.oss-cn-shenzhen.aliyuncs.com/Nike%20-%20Dream%20Crazy.mp4"},"danmaku":{"id":"NikeDreamCrazy","api":"https://api.prprpr.me/dplayer3/"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()]]></content>
+    <content type="text"><![CDATA[(function(){var player = new DPlayer({"container":document.getElementById("dplayer2"),"video":{"url":"http://ts1989ed.oss-cn-shenzhen.aliyuncs.com/Nike%20-%20Dream%20Crazy.mp4"},"danmaku":{"id":"NikeDreamCrazy","api":"https://api.prprpr.me/dplayer3/"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()]]></content>
       <categories>
         <category>Video</category>
       </categories>
@@ -64,7 +64,7 @@
   <entry>
     <title><![CDATA[Infinity【ForTest】]]></title>
     <url>%2F2018%2F09%2F13%2Fhello-world%2F</url>
-    <content type="text"><![CDATA[(function(){var player = new DPlayer({"container":document.getElementById("dplayer2"),"video":{"url":"http://olfa3o6q1.bkt.clouddn.com/%5B4K-60FPS%5D%20Avengers%20-%20Infinity%20War%20%7C%20Official%20Trailer%20%7C%202018.mp4"},"danmaku":{"id":"Infinity","api":"https://api.prprpr.me/dplayer3/"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()]]></content>
+    <content type="text"><![CDATA[(function(){var player = new DPlayer({"container":document.getElementById("dplayer3"),"video":{"url":"http://olfa3o6q1.bkt.clouddn.com/%5B4K-60FPS%5D%20Avengers%20-%20Infinity%20War%20%7C%20Official%20Trailer%20%7C%202018.mp4"},"danmaku":{"id":"Infinity","api":"https://api.prprpr.me/dplayer3/"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()]]></content>
       <categories>
         <category>Video</category>
       </categories>

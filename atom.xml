@@ -125,7 +125,7 @@
     <published>2018-09-13T23:22:28.000Z</published>
     <updated>2018-09-14T04:33:56.582Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><div id="dplayer0" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"video":{"url":"http://ts1989ed.oss-cn-shenzhen.aliyuncs.com/Nike%20-%20Dream%20Crazy.mp4"},"danmaku":{"id":"NikeDreamCrazy","api":"https://api.prprpr.me/dplayer3/"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script><a id="more"></a>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><div id="dplayer2" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer2"),"video":{"url":"http://ts1989ed.oss-cn-shenzhen.aliyuncs.com/Nike%20-%20Dream%20Crazy.mp4"},"danmaku":{"id":"NikeDreamCrazy","api":"https://api.prprpr.me/dplayer3/"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script><a id="more"></a>]]></content>
     
     <summary type="html">
     
@@ -151,7 +151,7 @@
     <published>2018-09-13T00:00:00.000Z</published>
     <updated>2018-09-14T06:35:15.256Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><div id="dplayer2" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer2"),"video":{"url":"http://olfa3o6q1.bkt.clouddn.com/%5B4K-60FPS%5D%20Avengers%20-%20Infinity%20War%20%7C%20Official%20Trailer%20%7C%202018.mp4"},"danmaku":{"id":"Infinity","api":"https://api.prprpr.me/dplayer3/"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script><a id="more"></a>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><div id="dplayer3" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer3"),"video":{"url":"http://olfa3o6q1.bkt.clouddn.com/%5B4K-60FPS%5D%20Avengers%20-%20Infinity%20War%20%7C%20Official%20Trailer%20%7C%202018.mp4"},"danmaku":{"id":"Infinity","api":"https://api.prprpr.me/dplayer3/"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script><a id="more"></a>]]></content>
     
     <summary type="html">
     

@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.ts1989.cn/"/>
-  <updated>2018-09-19T06:26:13.183Z</updated>
+  <updated>2018-09-19T09:08:16.043Z</updated>
   <id>http://www.ts1989.cn/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Alfred的OSS图床Workflow(python)</title>
+    <link href="http://www.ts1989.cn/2018/09/20/AlfredWorkflowOSS/"/>
+    <id>http://www.ts1989.cn/2018/09/20/AlfredWorkflowOSS/</id>
+    <published>2018-09-19T16:20:35.000Z</published>
+    <updated>2018-09-19T09:08:16.043Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><h4 id="什么是Alfred？"><a href="#什么是Alfred？" class="headerlink" title="什么是Alfred？"></a>什么是Alfred？</h4><p>Alfred依靠它强大的工作流机制，可以极大地提高Mac系统的工作效率。</p><p><img src="http://ts1989ed.oss-cn-shenzhen.aliyuncs.com/2018-09-19%2F1537345555.png" alt="Alfred"></p><p>作为 Mac 上最强大的效率工具，Alfred 在 Spotlight（MacOS X 自带的搜索和快速启动引擎）的基础上优化了快速启动与搜索的功能，还引入了 Workflows 等强大的扩展功能，使之成为了一个拥有无限自动化潜力的「工具平台」软件，可以用它来实现近乎一切有关自动的想法。</p><h4 id="为什么要使用这个Workflow？"><a href="#为什么要使用这个Workflow？" class="headerlink" title="为什么要使用这个Workflow？"></a>为什么要使用这个Workflow？</h4><p><strong>因为在编写个人博客，每次插入图片的时候都需要将图片上传到OSS图床，具体需要以下步骤：</strong></p><ol><li>截图</li><li>保存图片到桌面</li><li>打开浏览器</li><li>登陆阿里云</li><li>打开OSS控制台</li><li>上传图片</li><li>等待并获取url</li><li>回到markdown编辑器粘贴到<code>![]()</code>中</li></ol><p><strong>而现在使用这款插件只需要三步：</strong></p><ol><li>截图</li><li>Toggle Alfred 并键入：<code>OSS</code></li><li>回到markdown编辑器粘贴</li></ol><p>好吧，其实主要还是因为穷QAQ，因为不需要折腾的iPic需要订阅，每年¥68。</p><h3 id="安装及配置"><a href="#安装及配置" class="headerlink" title="安装及配置"></a>安装及配置</h3><h4 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h4><ul><li>一台MacOS的电脑</li><li>Alfred</li><li>阿里云OSS</li><li>python3环境</li><li>python3依赖oss2和pyobjc包</li></ul><p>👉<a href="https://blog.csdn.net/Int93/article/details/78811801" target="_blank" rel="noopener">python3安装教程</a></p><p><strong>安装依赖</strong><br>打开命令行输入：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install oss2</span><br></pre></td></tr></table></figure></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install pyobjc</span><br></pre></td></tr></table></figure><h4 id="脚本需要修改的参数"><a href="#脚本需要修改的参数" class="headerlink" title="脚本需要修改的参数"></a>脚本需要修改的参数</h4><p>修改位置：<br>右键OSS - 选择Open in Finder - 修改其中的<code>clipboard_data.py</code>文件<br><img src="http://ts1989ed.oss-cn-shenzhen.aliyuncs.com/2018-09-19%2F1537347522.png" alt="右键"></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">access_key_id = &apos;&lt;yourAccessKeyId&gt;&apos;</span><br><span class="line">access_key_secret = &apos;&lt;yourAccessKeySecret&gt;&apos;</span><br><span class="line">bucket_name = &apos;&lt;yourBucketName&gt;&apos;</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bucket = oss2.Bucket(auth, &apos;http://oss-cn-hangzhou.aliyuncs.com&apos;, bucket_name)</span><br></pre></td></tr></table></figure><p>👉<a href="https://help.aliyun.com/knowledge_detail/38738.html" target="_blank" rel="noopener">如何获取AccessKey ID和Secret</a></p><h4 id="如何使用"><a href="#如何使用" class="headerlink" title="如何使用"></a>如何使用</h4><p>复制一张图片，调用alfred，输入oss命令稍等一小会儿，会显示url和md两种返回格式，点击url或者md便可以获得对应地址在剪切板中，粘贴，所见即所得</p><p><img src="https://camo.githubusercontent.com/e532a32bb77a55848cc7886d9640e4088af46af7/68747470733a2f2f71696875692d706963747572652e6f73732d636e2d68616e677a686f752e616c6979756e63732e636f6d2f323031382d30372d32302f2545352542442539352545352542312538462e676966" alt="使用"></p><p id="div-border-left-blue">👉<a href="https://github.com/CQHui/oss_upload" target="_blank" rel="noopener">GIthub地址</a></p><p id="div-border-top-red" style="text-align:center"><strong>最后，感谢 @<a href="https://github.com/CQHui" target="_blank" rel="noopener">CQhui</a> 写的AlfredWorkflow！</strong></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla
+      
+    
+    </summary>
+    
+      <category term="Tools" scheme="http://www.ts1989.cn/categories/Tools/"/>
+    
+    
+      <category term="OSS" scheme="http://www.ts1989.cn/tags/OSS/"/>
+    
+      <category term="tech" scheme="http://www.ts1989.cn/tags/tech/"/>
+    
+  </entry>
   
   <entry>
     <title>AfredKnowledgeBase</title>

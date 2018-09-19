@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Alfred的OSS图床Workflow(python)]]></title>
+    <url>%2F2018%2F09%2F20%2FAlfredWorkflowOSS%2F</url>
+    <content type="text"><![CDATA[前言什么是Alfred？Alfred依靠它强大的工作流机制，可以极大地提高Mac系统的工作效率。 作为 Mac 上最强大的效率工具，Alfred 在 Spotlight（MacOS X 自带的搜索和快速启动引擎）的基础上优化了快速启动与搜索的功能，还引入了 Workflows 等强大的扩展功能，使之成为了一个拥有无限自动化潜力的「工具平台」软件，可以用它来实现近乎一切有关自动的想法。 为什么要使用这个Workflow？因为在编写个人博客，每次插入图片的时候都需要将图片上传到OSS图床，具体需要以下步骤： 截图 保存图片到桌面 打开浏览器 登陆阿里云 打开OSS控制台 上传图片 等待并获取url 回到markdown编辑器粘贴到![]()中 而现在使用这款插件只需要三步： 截图 Toggle Alfred 并键入：OSS 回到markdown编辑器粘贴 好吧，其实主要还是因为穷QAQ，因为不需要折腾的iPic需要订阅，每年¥68。 安装及配置环境 一台MacOS的电脑 Alfred 阿里云OSS python3环境 python3依赖oss2和pyobjc包 👉python3安装教程 安装依赖打开命令行输入：1pip install oss2 1pip install pyobjc 脚本需要修改的参数修改位置：右键OSS - 选择Open in Finder - 修改其中的clipboard_data.py文件 123access_key_id = &apos;&lt;yourAccessKeyId&gt;&apos;access_key_secret = &apos;&lt;yourAccessKeySecret&gt;&apos;bucket_name = &apos;&lt;yourBucketName&gt;&apos; 1bucket = oss2.Bucket(auth, &apos;http://oss-cn-hangzhou.aliyuncs.com&apos;, bucket_name) 👉如何获取AccessKey ID和Secret 如何使用复制一张图片，调用alfred，输入oss命令稍等一小会儿，会显示url和md两种返回格式，点击url或者md便可以获得对应地址在剪切板中，粘贴，所见即所得 👉GIthub地址 最后，感谢 @CQhui 写的AlfredWorkflow！]]></content>
+      <categories>
+        <category>Tools</category>
+      </categories>
+      <tags>
+        <tag>OSS</tag>
+        <tag>tech</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[AfredKnowledgeBase]]></title>
     <url>%2F2018%2F09%2F19%2FAfredKnowledgeBase%2F</url>
     <content type="text"><![CDATA[]]></content>

@@ -98,7 +98,7 @@
 <meta property="og:image" content="http://ts1989ed.oss-cn-shenzhen.aliyuncs.com/2018-09-19%2F1537345555.png">
 <meta property="og:image" content="http://ts1989ed.oss-cn-shenzhen.aliyuncs.com/2018-09-19%2F1537347522.png">
 <meta property="og:image" content="https://camo.githubusercontent.com/e532a32bb77a55848cc7886d9640e4088af46af7/68747470733a2f2f71696875692d706963747572652e6f73732d636e2d68616e677a686f752e616c6979756e63732e636f6d2f323031382d30372d32302f2545352542442539352545352542312538462e676966">
-<meta property="og:updated_time" content="2018-09-19T09:08:16.043Z">
+<meta property="og:updated_time" content="2018-09-19T09:10:06.670Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Alfred的OSS图床Workflow(python)">
 <meta name="twitter:description" content="前言什么是Alfred？Alfred依靠它强大的工作流机制，可以极大地提高Mac系统的工作效率。  作为 Mac 上最强大的效率工具，Alfred 在 Spotlight（MacOS X 自带的搜索和快速启动引擎）的基础上优化了快速启动与搜索的功能，还引入了 Workflows 等强大的扩展功能，使之成为了一个拥有无限自动化潜力的「工具平台」软件，可以用它来实现近乎一切有关自动的想法。 为什么要使">
@@ -337,7 +337,7 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-09-19T16:20:35Z">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-09-20T00:20:35+08:00">
                 2018-09-19
               </time>
             
@@ -353,7 +353,7 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-09-19T09:08:16Z">
+              <time title="更新于" itemprop="dateModified" datetime="2018-09-19T17:10:06+08:00">
                 2018-09-19
               </time>
             
@@ -413,7 +413,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  474字
+                  484字
                 </span>
               
 
@@ -482,6 +482,7 @@
 <p><strong>安装依赖</strong><br>打开命令行输入：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install oss2</span><br></pre></td></tr></table></figure></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install pyobjc</span><br></pre></td></tr></table></figure>
 <h4 id="脚本需要修改的参数"><a href="#脚本需要修改的参数" class="headerlink" title="脚本需要修改的参数"></a>脚本需要修改的参数</h4><p>修改位置：<br>右键OSS - 选择Open in Finder - 修改其中的<code>clipboard_data.py</code>文件<br><img src="http://ts1989ed.oss-cn-shenzhen.aliyuncs.com/2018-09-19%2F1537347522.png" alt="右键"></p>
+<p>修改下面这三行的内容：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">access_key_id = &apos;&lt;yourAccessKeyId&gt;&apos;</span><br><span class="line">access_key_secret = &apos;&lt;yourAccessKeySecret&gt;&apos;</span><br><span class="line">bucket_name = &apos;&lt;yourBucketName&gt;&apos;</span><br></pre></td></tr></table></figure>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bucket = oss2.Bucket(auth, &apos;http://oss-cn-hangzhou.aliyuncs.com&apos;, bucket_name)</span><br></pre></td></tr></table></figure>
 <p>👉<a href="https://help.aliyun.com/knowledge_detail/38738.html" target="_blank" rel="noopener">如何获取AccessKey ID和Secret</a></p>

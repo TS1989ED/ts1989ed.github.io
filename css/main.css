@@ -1834,7 +1834,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #961f46;
+  background: #ff6aff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2941,6 +2941,12 @@ hr {
     width: auto;
     text-align: center;
   }
+}
+.site-title {
+  font-size: 75px;
+  font-weight: bold;
+  color: #fff;
+  letter-spacing: 3px;
 }
 body {
   background: url("https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-685389.png");

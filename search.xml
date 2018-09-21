@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[编写Alfred工作流所需要的知识储备]]></title>
+    <title><![CDATA[如何编写Alfred Workflow]]></title>
     <url>%2F2018%2F09%2F21%2FAlfredKnowledgeBase%2F</url>
-    <content type="text"><![CDATA[]]></content>
+    <content type="text"><![CDATA[语言基础Alfred官方并没有给出详细的Alfred Workflow撰写教程，原因是写一个Workflow的实际门槛是很低的。他们大部分是使用一门了解的语言来书写的。在Alfred也罗列了这些语言： 包括： bash, zsh, PHP, Ruby, Python, Perl, AppleScript, JavaScript 开发者只需要会使用上面任意的语言，就可以开始编写自己的Alfred Workflow了。 如何使用Alfred？Alfred有个很好的地方，就是能在Alfred中看到你所使用的Alfred的具体实现，workflow也都是开源的。大部分workflow都可以直接在Alfred的workflows选项卡下看到，部分workflow可能需要调用一些脚本文件，你也可以进入对应的workflow文件夹下打开具体的脚本文件（可以通过workflows👉Show in Finder打开对应的workflow文件夹） Alfred workflow有几个关键组成部分，包括Triggers、Inputs、Actions、Outputs。 Triggers用于设置快捷键，并不是必备的，因为Option+Space快捷键就可以快捷打开Alfred输入框 Inputs定义了在Alfred输入框中输入对应的keyword调用相关的操作 Action就是keyword调用的操作 Outputs一般用于显示操作的结果，提示操作成功与否，以Post Notification较为常见，通过Mac的notification center提示。 🤨Alfred使用手册🤨👉Alfred2.5.1使用全攻略👉Alfred：基础功能及设置👉编写 Alfred 使用的 Workflow]]></content>
       <categories>
         <category>Tools</category>
       </categories>

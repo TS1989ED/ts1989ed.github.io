@@ -1834,7 +1834,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #daafc7;
+  background: #11d0ff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2949,11 +2949,14 @@ hr {
   letter-spacing: 3px;
 }
 body {
-  background: url("https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-685389.png");
+  background: url("http://ts1989ed.oss-cn-shenzhen.aliyuncs.com/Picture/WallPaper/wallhaven-685389.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
+}
+#instantclick {
+  display: none;
 }
 .header {
   background: rgba(255,250,250,0.4);
@@ -3058,7 +3061,7 @@ body {
   border-bottom-color: #87cefa;
 }
 .sidebar {
-  background: url("https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-688197.jpg");
+  background: url("http://ts1989ed.oss-cn-shenzhen.aliyuncs.com/Picture/WallPaper/wallhaven-688197.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

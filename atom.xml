@@ -197,31 +197,6 @@
   </entry>
   
   <entry>
-    <title>Hexo使用中遇到的小问题【加密】</title>
-    <link href="http://www.ts1989.cn/2018/09/04/ProblemsInHexo/"/>
-    <id>http://www.ts1989.cn/2018/09/04/ProblemsInHexo/</id>
-    <published>2018-09-04T14:47:09.000Z</published>
-    <updated>2018-09-16T03:09:21.894Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h4 id="标签和分类失败"><a href="#标签和分类失败" class="headerlink" title="标签和分类失败"></a>标签和分类失败</h4><p>在设置tags和categories时，<code>- Hexo</code>中间要加上空格</p><h4 id="版权信息总是显示为yoursite-com"><a href="#版权信息总是显示为yoursite-com" class="headerlink" title="版权信息总是显示为yoursite.com"></a>版权信息总是显示为<code>yoursite.com</code></h4><p>将<code>hero/_config.yml</code>中的url的·<code>yoursite</code>更改即可</p><h4 id="本地效果和发布效果不一致"><a href="#本地效果和发布效果不一致" class="headerlink" title="本地效果和发布效果不一致"></a>本地效果和发布效果不一致</h4><p>Mac用<code>Command+Shift+R</code>对Chrome强制刷新，短则几秒多则几分钟效果就更新了</p><h4 id="hexo-s的一次报错"><a href="#hexo-s的一次报错" class="headerlink" title="hexo s的一次报错"></a>hexo s的一次报错</h4><p>在一次错误地修改了<code>.js</code>文件后，<code>hexo server</code>报错，报错内容指向<code>highlight.js</code>文件，解决方法：<br>修改<span id="inline-blue">站点配置文件</span>中的<code>auto_detect</code>为<code>false</code></p><h4 id="左边标题栏1～8-大标题显示正常，后面显示为无序列表"><a href="#左边标题栏1～8-大标题显示正常，后面显示为无序列表" class="headerlink" title="左边标题栏1～8##`大标题显示正常，后面显示为无序列表"></a>左边标题栏1～8<code>##`</code>大标题显示正常，后面显示为无序列表</h4><p><code>##</code>大标题只能显示八个，暂未作出修改，但是改为<code>###</code>问题就解决了</p><h4 id="关闭特定页面的Valine评论系统"><a href="#关闭特定页面的Valine评论系统" class="headerlink" title="关闭特定页面的Valine评论系统"></a>关闭特定页面的Valine评论系统</h4><p>在<code>hexo/source</code>中的指定页面或文章的front-matter中加入：</p><blockquote><p>comments: false</p></blockquote><h4 id="文章摘要同时显示description和-lt-more-gt-的摘要"><a href="#文章摘要同时显示description和-lt-more-gt-的摘要" class="headerlink" title="文章摘要同时显示description和&lt;!--more--&gt;的摘要"></a>文章摘要同时显示description和<code>&lt;!--more--&gt;</code>的摘要</h4><p>在<span id="inline-red">主题配置文件</span>中</p><blockquote><p>excerpt_description: true</p></blockquote><p>设置为<code>false</code></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla
-      
-    
-    </summary>
-    
-      <category term="Todo" scheme="http://www.ts1989.cn/categories/Todo/"/>
-    
-    
-      <category term="Hexo" scheme="http://www.ts1989.cn/tags/Hexo/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Hexo进阶</title>
     <link href="http://www.ts1989.cn/2018/09/04/AdvancedOperationInHexo/"/>
     <id>http://www.ts1989.cn/2018/09/04/AdvancedOperationInHexo/</id>

@@ -39,7 +39,7 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[阿里云产品总结]]></title>
+    <title><![CDATA[阿里云产品]]></title>
     <url>%2F2018%2F09%2F16%2FAbout-AliCloud%2F</url>
     <content type="text"><![CDATA[产品及功能ESC(Elastic Compute Service)以虚拟机的方式将一台物理机分成多台云服务器，提供可伸缩的计算服务。 衍生产品： 阿里云从云服务器ESC衍生出来很多云服务器系列，例如适用于初级用户的轻量应用服务器，还有 为了迎合各种高性能场景的云服务器，诸如GPU云服务器、FPGA云服务器等，总之都是云服务器，是企业上云的基本款。 关于轻量应用服务器： 精简了一些 ECS 的功能，比如说安骑士。把安全组的操作也做了适当减法更适合用户操作。 轻量应用服务器有轻量两个字，意味着其无法持续进行高负载运行（即 CPU 长时间高负载占用），如果我们要利用 轻量应用服务器 来进行持续的渲染、转码、机器学习等持续高负载操作那么就不可以了，也不支持 Nvme 这样的超高性能的 SSD，这对于读写敏感的操作就不好了。 阿里云的“云翼计划”的学生服务器就是轻量应用服务器。 RDS(Relational Database Service)通过云服务的方式让关系型数据库管理、操作和扩展变得更加简单。 OSS(Open Store Service)对任意大小数据对象提供高可用、高可靠的海量存储服务。 相关文章： 阿里云对象存储OSS SLB(Server Load Balance)基于LVS和Tengine实现的4层和7层负载均衡，有动态扩容。 OCS(Open Cache Service)基于内部Tair，增加一层Proxy，支持海量小数据的高速访问。 OTS(Open Table Service)海量(结构化)数据存储和实时查询服务 CDN(Content Delevery Network)通过覆盖全网的缓存服务以及负载均衡等技术将用户请求定向到最合适的区域，提高用户服务的响应速度及网站服务能力。 OAS(Open Archive Service)离线归档，冷数据备份，类似Amazon Glacier ODPS(Open Data Processing Service)海量数据处理和分析平台。 SLS(Simple Log Service)解决异构、分布式系统中日志实时收集、存储与查询的基础服务]]></content>
       <categories>

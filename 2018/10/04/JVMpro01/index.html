@@ -74,7 +74,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="IT,Reading,JVM," />
 
 
 
@@ -87,14 +87,20 @@
 
 
 
+<meta name="description" content="世界上没有完美的程序，但我们并不因此沮丧，因为写程序本来就是一个不断追求完美的过程。">
+<meta name="keywords" content="IT,Reading,JVM">
 <meta property="og:type" content="article">
-<meta property="og:title" content="JVMpro01">
+<meta property="og:title" content="深入理解Java虚拟机01-走近Java">
 <meta property="og:url" content="http://www.ts1989.cn/2018/10/04/JVMpro01/index.html">
 <meta property="og:site_name" content="TS1989">
+<meta property="og:description" content="世界上没有完美的程序，但我们并不因此沮丧，因为写程序本来就是一个不断追求完美的过程。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-10-03T15:25:00.470Z">
+<meta property="og:image" content="http://ts1989ed.oss-cn-shenzhen.aliyuncs.com/2018-10-04%2F1538618622.png">
+<meta property="og:updated_time" content="2018-10-04T04:00:13.698Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="JVMpro01">
+<meta name="twitter:title" content="深入理解Java虚拟机01-走近Java">
+<meta name="twitter:description" content="世界上没有完美的程序，但我们并不因此沮丧，因为写程序本来就是一个不断追求完美的过程。">
+<meta name="twitter:image" content="http://ts1989ed.oss-cn-shenzhen.aliyuncs.com/2018-10-04%2F1538618622.png">
 
 
 
@@ -130,7 +136,7 @@
 
 
 
-  <title>JVMpro01 | TS1989</title>
+  <title>深入理解Java虚拟机01-走近Java | TS1989</title>
   
 
 
@@ -317,7 +323,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">JVMpro01</h1>
+          <h1 class="post-title" itemprop="name headline">深入理解Java虚拟机01-走近Java</h1>
         
 
         <div class="post-meta">
@@ -345,12 +351,34 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-10-03T23:25:00+08:00">
-                2018-10-03
+              <time title="更新于" itemprop="dateModified" datetime="2018-10-04T12:00:13+08:00">
+                2018-10-04
               </time>
             
           </span>
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Notes/" itemprop="url" rel="index">
+                    <span itemprop="name">Notes</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -383,7 +411,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  0字
+                  2,066字
                 </span>
               
 
@@ -399,12 +427,16 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  1分钟
+                  8分钟
                 </span>
               
             </div>
           
 
+          
+              <div class="post-description">
+                  世界上没有完美的程序，但我们并不因此沮丧，因为写程序本来就是一个不断追求完美的过程。
+              </div>
           
 
         </div>
@@ -420,7 +452,79 @@
       
 
       
-        
+        <p>第一章的内容大致翻阅了一下感觉还是挺多的，大致都是关于Java的特点、发展史、Java未来的走向以及阅读OpenJDK源码的指导。对于第一章的内容我也准备做一些总结，以备以后的扩充和温故。</p>
+<h3 id="Java的特性和优点"><a href="#Java的特性和优点" class="headerlink" title="Java的特性和优点"></a>Java的特性和优点</h3><blockquote>
+<p>提升了开发效率</p>
+</blockquote>
+<ul>
+<li>结构严谨，面向对象</li>
+<li>摆脱硬件束缚，“一次编写，到处运行”</li>
+<li>相对安全的内存管理和访问机制，避免了绝大部分的内存泄漏和指针越界问题(内存回收机制)</li>
+<li>热点代码检测和运行时编译及优化，运行次数越多性能越好</li>
+<li>完善的应用程序接口(第三方类库)</li>
+</ul>
+<h3 id="Java的技术体系"><a href="#Java的技术体系" class="headerlink" title="Java的技术体系"></a>Java的技术体系</h3><p>Sun公司所定义的Java技术体系包括以下几个组成部分：</p>
+<ol>
+<li>Jav程序设计语言</li>
+<li>各种硬件平台上的Java虚拟机</li>
+<li>Class文件格式（面向对象的载体）</li>
+<li>Java API库（Java自带可调用的库）</li>
+<li>来自商业机构和开源社区的第三方Java类库（封装好的库）</li>
+</ol>
+<p><strong>JDK(Java Development Kit)</strong>：1+2+4，也就是支持Java开发的最小环境。<br><strong>JRE(Java Runtime Environment)</strong>：JavaSE(Java Standard Edition)的API+虚拟机。</p>
+<p>Java技术体系模块图：</p>
+<p><img src="http://ts1989ed.oss-cn-shenzhen.aliyuncs.com/2018-10-04%2F1538618622.png" alt="Java技术体系模块图"></p>
+<p>按照技术服务领域划分，Java技术体系可以分为4个平台：</p>
+<ul>
+<li>JavaCard：支持一些Java小程序运行在小内存设备上的平台，如智能卡</li>
+<li>JavaME(Micro Edition)：支持Java运行在移动终端上的平台，对JavaAPI有所精简，并加入了针对移动端的支持</li>
+<li>JavaSE(Standard Edition)：支持面向桌面级应用(如Windows下的应用程序)的Java平台，提供了完整的Java核心API。</li>
+<li>JavaEE(Enterprise Edition)：支持使用多层架构的企业应用(如ERP、CRM应用)的Java平台，对JavaSE API做了大量的扩充并提供相关的部署支持</li>
+</ul>
+<p>入门版(Card)👉阉割版(ME)👉标配(SE)👉Pro(EE)</p>
+<h3 id="Java发展史"><a href="#Java发展史" class="headerlink" title="Java发展史"></a>Java发展史</h3><ul>
+<li>1991年，提出绿色项目（猜想可能是针对c/c++中的垃圾回收，内存处理之类的问题而提出的一个更友好的语言概念）;</li>
+<li>创立oak（java语言的前身，为了解决家用电器的通信问题而诞生，没有理想市场，不久后将要失败）;设计出硬件原型；同时设计出注释器。</li>
+<li>1992年，更名为java;  Star-Seven Prototype(七星原型，度娘上查了好久没找到，有机会去翻墙再查吧。  猜想可能是当时那个版本的七大基本规范吧。。。先记下来);</li>
+<li>1993年，TV Set-top Box ( 可能是在电视机顶盒 试用吧)；发布应用开发平台。。</li>
+<li>1994年，LiveOak（可能是oak发展有一些起色的意思吧。英语不好真的很忧伤。）;发布Era浏览器；继而发布HotJava浏览器；设计出java编译器；</li>
+<li>1995年，正式注册java,并相继获得Netscape,Oracle,Microsoft的支持，HotJava进一步发展。</li>
+<li>1996年，java1.0发布。</li>
+<li>1996年4月，10个最主要的操作系统供应商申明将在其产品中嵌入JAVA技术 </li>
+<li>1997年，java1.1发布。</li>
+<li>1997年9月，JavaDeveloperConnection社区成员超过十万 。</li>
+<li>1998年2月，JDK1.1被下载超过2,000,000次 </li>
+<li>1998年，java1.2发布。</li>
+<li>1998年12月8日，JAVA2企业平台J2EE发布。</li>
+<li>1999年6月，SUN公司发布Java的三个版本：标准版、企业版和微型版（J2SE、J2EE、J2ME） </li>
+<li>2000年，java1.3发布。</li>
+<li>2002年，java1.4发布，自此Java的计算能力有了大幅提升。</li>
+<li>2004年，java5.0发布，J2SE1.5发布，是Java语言的发展史上的又一里程碑事件。为了表示这个版本的重要性，J2SE1.5更名为J2SE5.0 </li>
+<li>2005年6月，JavaOne大会召开，SUN公司公开Java SE 6。此时，Java的各种版本已经更名以取消其中的数字“2”：J2EE更名为Java EE, J2SE更名为Java SE，J2ME更名为Java ME。 </li>
+<li>2006年，java6.0发布，并半开源。</li>
+<li>2010年，Oracle收购Sun公司，苹果不再支持java</li>
+<li>2011年，java7.0发布。</li>
+<li>2014年，java8.0发布。</li>
+</ul>
+<h3 id="Java虚拟机发展史"><a href="#Java虚拟机发展史" class="headerlink" title="Java虚拟机发展史"></a>Java虚拟机发展史</h3><ul>
+<li>Sun Classic/Exact VM(初代)：世界上第一款商用Java虚拟机，Sun公司研发，主要特点：慢。</li>
+<li>Sun HotSpot VM(新技术)：目前使用范围最广的虚拟机，是Sun从一家名为Longview Technologies公司收购来的。主要特点：热点探测技术。 </li>
+<li>Sun Mobile-Embedded VM/Meta-Circular VM(探索)：面对移动嵌入式市场的探索</li>
+<li>BEA JRockit /IBM J9 VM(其它公司)：当时号称”世界上最快的Java虚拟机”</li>
+<li>Azul VM/BEA Liquid VM(特定硬件)：高性能Java的武器，特定硬件可以最大限度地发挥硬件的能力，提升Java程序的执行能力。</li>
+<li>Apache Harmony/Google Android Dalvik VM(高速发展)：安卓虚拟机。是Android平台的核心组成部分之一。</li>
+<li>Microsoft JVM(彩蛋)：2333</li>
+</ul>
+<h3 id="Java的未来"><a href="#Java的未来" class="headerlink" title="Java的未来"></a>Java的未来</h3><ol>
+<li>模块化：说起来也就是解除功能模块和功能模块之间的耦合，降低系统维护消耗。(书上也没仔细说，大家看着标题脑补一下也就知道是干嘛的)</li>
+<li>混合语言：对系统来说是好事(因为不同语言有不同语言的特点 也就是擅长的地方)，但是对于Java程序员的要求也会因此而提高。</li>
+<li>多核并行：顺应发展</li>
+<li>丰富语法：更新JDK版本</li>
+<li>64位虚拟机：现在64位虚拟机速度没有32位快，主要是Java EE对64位虚拟机的要求比较急迫。</li>
+</ol>
+<h3 id="自己编译JDK"><a href="#自己编译JDK" class="headerlink" title="自己编译JDK"></a>自己编译JDK</h3><p>想要一探JDK内部的实现机制，最便捷的路径之一就是自己编译一套JDK，通过阅读和跟踪调试JDK源码去了解Java技术体系的原理，虽然门槛会高一点，但肯定会比阅读各种书籍、文章更加贴近本质。另外，JDK中很多底层方法都是本地化的，需要跟踪这些方法的运作或对JDK进行Hack的时候，都需要自己编译一套JDK。</p>
+<p>OpenJDK源码结构图：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line">├─agent                            Serviceability Agent的客户端实现 </span><br><span class="line">├─make                             用来build出HotSpot的各种配置文件 </span><br><span class="line">├─src                              HotSpot VM的源代码 </span><br><span class="line">│  ├─cpu                            CPU相关代码（汇编器、模板解释器、ad文件、部分runtime函数在这里实现） </span><br><span class="line">│  ├─os                             操作系相关代码 </span><br><span class="line">│  ├─os_cpu                         操作系统+CPU的组合相关的代码 </span><br><span class="line">│  └─share                          平台无关的共通代码 </span><br><span class="line">│      ├─tools                        工具 </span><br><span class="line">│      │  ├─hsdis                      反汇编插件 </span><br><span class="line">│      │  ├─IdealGraphVisualizer       将server编译器的中间代码可视化的工具 </span><br><span class="line">│      │  ├─launcher                   启动程序“Java” </span><br><span class="line">│      │  ├─LogCompilation             将-XX:+LogCompilation输出的日志（hotspot.log）整理成更容易阅读的格式的工具 </span><br><span class="line">│      │  └─ProjectCreator             生成Visual Studio的project文件的工具 </span><br><span class="line">│      └─vm                           HotSpot VM的核心代码 </span><br><span class="line">│          ├─adlc                       平台描述文件（上面的cpu或os_cpu里的*.ad文件）的编译器 </span><br><span class="line">│          ├─asm                        汇编器接口 </span><br><span class="line">│          ├─c1                         client编译器（又称“C1”） </span><br><span class="line">│          ├─ci                         动态编译器的公共服务/从动态编译器到VM的接口 </span><br><span class="line">│          ├─classfile                  类文件的处理（包括类加载和系统符号表等） </span><br><span class="line">│          ├─code                       动态生成的代码的管理 </span><br><span class="line">│          ├─compiler                   从VM调用动态编译器的接口 </span><br><span class="line">│          ├─gc_implementation          GC的实现 </span><br><span class="line">│          │  ├─concurrentMarkSweep      Concurrent Mark Sweep GC的实现 </span><br><span class="line">│          │  ├─g1                       Garbage-First GC的实现（不使用老的分代式GC框架） </span><br><span class="line">│          │  ├─parallelScavenge         ParallelScavenge GC的实现（server VM默认，不使用老的分代式GC框架） </span><br><span class="line">│          │  ├─parNew                   ParNew GC的实现 </span><br><span class="line">│          │  └─shared                   GC的共通实现 </span><br><span class="line">│          ├─gc_interface               GC的接口 </span><br><span class="line">│          ├─interpreter                解释器，包括“模板解释器”（官方版在用）和“C++解释器”（官方版不在用） </span><br><span class="line">│          ├─libadt                     一些抽象数据结构 </span><br><span class="line">│          ├─memory                     内存管理相关（老的分代式GC框架也在这里） </span><br><span class="line">│          ├─oops                       HotSpot VM的对象系统的实现 </span><br><span class="line">│          ├─opto                       server编译器（又称“C2”或“Opto”） </span><br><span class="line">│          ├─prims                      HotSpot VM的对外接口，包括部分标准库的native部分和JVMTI实现 </span><br><span class="line">│          ├─runtime                    运行时支持库（包括线程管理、编译器调度、锁、反射等） </span><br><span class="line">│          ├─services                   主要是用来支持JMX之类的管理功能的接口 </span><br><span class="line">│          ├─shark                      基于LLVM的JIT编译器（官方版里没有使用） </span><br><span class="line">│          └─utilities                  一些基本的工具类 </span><br><span class="line">└─test                             单元测试</span><br></pre></td></tr></table></figure>
       
     </div>
     
@@ -434,6 +538,16 @@
     
 
     <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/IT/" rel="tag"><i class="fa fa-tag"></i> IT</a>
+          
+            <a href="/tags/Reading/" rel="tag"><i class="fa fa-tag"></i> Reading</a>
+          
+            <a href="/tags/JVM/" rel="tag"><i class="fa fa-tag"></i> JVM</a>
+          
+        </div>
       
 
       
@@ -509,8 +623,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -551,7 +674,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">13</span>
+                  <span class="site-state-item-count">15</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -630,6 +753,22 @@ show_date_time();
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Java的特性和优点"><span class="nav-number">1.</span> <span class="nav-text">Java的特性和优点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Java的技术体系"><span class="nav-number">2.</span> <span class="nav-text">Java的技术体系</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Java发展史"><span class="nav-number">3.</span> <span class="nav-text">Java发展史</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Java虚拟机发展史"><span class="nav-number">4.</span> <span class="nav-text">Java虚拟机发展史</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Java的未来"><span class="nav-number">5.</span> <span class="nav-text">Java的未来</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#自己编译JDK"><span class="nav-number">6.</span> <span class="nav-text">自己编译JDK</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       

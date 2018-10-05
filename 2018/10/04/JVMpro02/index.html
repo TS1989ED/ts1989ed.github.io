@@ -95,7 +95,7 @@
 <meta property="og:site_name" content="TS1989">
 <meta property="og:description" content="Java与C++之间有一堵由内存动态分配和垃圾收集技术所围成的“高墙”">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-10-04T04:36:08.360Z">
+<meta property="og:updated_time" content="2018-10-05T15:14:43.469Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="深入理解JVM02-Java内存区域与内存溢出异常">
 <meta name="twitter:description" content="Java与C++之间有一堵由内存动态分配和垃圾收集技术所围成的“高墙”">
@@ -349,8 +349,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-10-04T12:36:08+08:00">
-                2018-10-04
+              <time title="更新于" itemprop="dateModified" datetime="2018-10-05T23:14:43+08:00">
+                2018-10-05
               </time>
             
           </span>
@@ -409,7 +409,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  146字
+                  1,279字
                 </span>
               
 
@@ -425,7 +425,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  1分钟
+                  4分钟
                 </span>
               
             </div>
@@ -450,8 +450,65 @@
       
 
       
-        <h3 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h3><p>对C、C++开发人员来说，在内存管理领域，他们有着最高的权力，但同时肩负着每一个对象从开始到终结的维护责任。<br>而对于Java程序员而言，由于JVM的自动内存管理机制，Java程序员把内存控制的权力交给了Java虚拟机，一旦出现内存泄漏和溢出方面的问题，如果不了解虚拟机是怎样使用内存的，那么排查错误将为成为一项十分艰难的工作。</p>
-<h3 id="运行时数据区域"><a href="#运行时数据区域" class="headerlink" title="运行时数据区域"></a>运行时数据区域</h3>
+        <h3 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h3><p>对C、C++开发人员来说，在内存管理领域，他们有着最高的权力，但同时肩负着每一个对象从开始到终结的维护责任。<br>而对于Java程序员而言，由于JVM的自动内存管理机制，Java程序员把内存控制的权力交给了Java虚拟机，<strong>一旦出现内存泄漏和溢出方面的问题，如果不了解虚拟机是怎样使用内存的，那么排查错误将为成为一项十分艰难的工作。</strong></p>
+<h3 id="运行时数据区域"><a href="#运行时数据区域" class="headerlink" title="运行时数据区域"></a>运行时数据区域</h3><p>Java 虚拟机在执行 Java 程序的过程中会把他所管理的内存划分为若干个不同的数据区域。Java 虚拟机规范将 JVM 所管理的内存分为以下几个运行时数据区：程序计数器、Java 虚拟机栈、本地方法栈、Java 堆、方法区。下面详细阐述各数据区所存储的数据类型。</p>
+<h5 id="程序计数器-Program-Counter-Register"><a href="#程序计数器-Program-Counter-Register" class="headerlink" title="程序计数器(Program Counter Register)"></a>程序计数器(Program Counter Register)</h5><ul>
+<li>作用：<br>记录当前线程所执行到字节码的行号。字节码解释器工作的时就是通过改变这个计数器的值来选取下一条所需要执行的字节码指令。</li>
+<li>意义：<br>由于JVM的多线程是通过线程轮换并分配处理器执行时间的方式来实现的，一个处理器都只会执行一条线程中的指令。所以为了实现并行，并保证各个线程指令安全顺利执行，每条线程都需要有一个独立的程序计数器。</li>
+<li>记录内容：<ul>
+<li>如果线程正在执行一个Java方法，计数器记录的是正在执行的虚拟字节码指令的地址。</li>
+<li>如果正在执行Native方法，计数器值为空(Undefined)。</li>
+</ul>
+</li>
+<li>可能出现的异常：<br>此内存区域是唯一一个在Java虚拟机规范中没有任何内存溢出异常(OutOfMemoryError)的区域。</li>
+</ul>
+<h5 id="Java虚拟机栈-Java-Virtual-Machine-Stacks"><a href="#Java虚拟机栈-Java-Virtual-Machine-Stacks" class="headerlink" title="Java虚拟机栈(Java Virtual Machine Stacks)"></a>Java虚拟机栈(Java Virtual Machine Stacks)</h5><blockquote>
+<p><strong>Java内存区常被分为堆内存（Heap）和栈内存（Stack），其中栈内存其实指的就是虚拟机栈，或者说是虚拟机栈中的局部变量表部分</strong></p>
+</blockquote>
+<ul>
+<li>作用：<br>虚拟机栈描述的是Java方法执行的内存模型，每个方法在执行的同时都会创建一个线帧(Stack Frame)用于存储局部变量表、操作数栈、动态链接、方法出口等信息。</li>
+<li>特点：<ul>
+<li>Java虚拟机栈也是线程私有的，它的生命周期与线程相同。</li>
+<li>每一个方法从调用直至执行完成的过程就对应着一个线帧在虚拟机栈中从入栈到出栈的过程。</li>
+</ul>
+</li>
+<li>存储内容：<ul>
+<li>局部变量表，包括编译期可知的各种基本数据类型、对象引用(reference类型，可能是一个指向对象起始地址的引用指针，也可能是指向一个代表对象的句柄或次对象相关位置)、指向一条字节码指令的returnAddress类型</li>
+<li>值得注意的是：<strong>局部变量表所需的内存空间在编译期间完成分配。在方法运行的阶段是不会改变局部变量表的大小的</strong></li>
+</ul>
+</li>
+<li>可能出现的异常：<ul>
+<li><strong>如果线程请求的栈深度大于虚拟机所允许的深度，将抛出StackOverflowError异常。</strong></li>
+<li><strong>如果在动态扩展内存的时候无法申请到足够的内存，就会抛出OutOfMemoryError异常。</strong></li>
+</ul>
+</li>
+</ul>
+<h5 id="本地方法栈-Native-Method-Stack"><a href="#本地方法栈-Native-Method-Stack" class="headerlink" title="本地方法栈(Native Method Stack)"></a>本地方法栈(Native Method Stack)</h5><ul>
+<li>特点：<br>与虚拟机栈类似，区别在于虚拟机栈为虚拟机执行java方法（字节码）服务，而本地方法则为虚拟机所使用的Native方法服务</li>
+<li>可能抛出的异常：<br><strong>与虚拟机栈一样，本地方法栈区域也乎抛出StackOverflowError和OutOfMemoryError异常。</strong></li>
+</ul>
+<h5 id="Java堆-Java-Heap"><a href="#Java堆-Java-Heap" class="headerlink" title="Java堆(Java Heap)"></a>Java堆(Java Heap)</h5><blockquote>
+<p><strong>Java堆是垃圾收集器管理的主要区域（GC堆），可细分为：新生代，老年代，按空间可细分为：Eden空间，From Survivor空间，To Survivor空间</strong></p>
+</blockquote>
+<ul>
+<li>作用：<ul>
+<li><strong>Java Heap是被所有线程共享的一块区域，在虚拟机启动时创建。</strong></li>
+<li>此内存区域的唯一目的就是存放对象实例，让对象实例更好地分配内存。</li>
+<li>垃圾回收机制(GC)：堆是垃圾收集器管理的主要区域，可以更好地回收内存。</li>
+</ul>
+</li>
+<li>存储内容：<ul>
+<li>存放对象实例，几乎所有的对象实例都在这里进行分配。堆可以处于物理上不连续的内存空间，只要逻辑上是连续的就可以。</li>
+<li>值得注意的是：在JIT编译器等技术的发展下，所有对象都在堆上进行分配已变得不那么绝对。有些对象实例也可以分配在栈中。</li>
+</ul>
+</li>
+<li>可能出现的异常：<ul>
+<li>实现堆可以是固定大小的，也可以通过设置配置文件设置该为可扩展的。</li>
+<li>如果堆上没有内存进行分配，并无法进行扩展时，将会抛出OutOfMemoryError异常。</li>
+</ul>
+</li>
+</ul>
+<h5 id="方法区"><a href="#方法区" class="headerlink" title="方法区"></a>方法区</h5>
       
     </div>
     
@@ -694,7 +751,7 @@ show_date_time();
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#概述"><span class="nav-number">1.</span> <span class="nav-text">概述</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#运行时数据区域"><span class="nav-number">2.</span> <span class="nav-text">运行时数据区域</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#概述"><span class="nav-number">1.</span> <span class="nav-text">概述</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#运行时数据区域"><span class="nav-number">2.</span> <span class="nav-text">运行时数据区域</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#程序计数器-Program-Counter-Register"><span class="nav-number">2.0.1.</span> <span class="nav-text">程序计数器(Program Counter Register)</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Java虚拟机栈-Java-Virtual-Machine-Stacks"><span class="nav-number">2.0.2.</span> <span class="nav-text">Java虚拟机栈(Java Virtual Machine Stacks)</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#本地方法栈-Native-Method-Stack"><span class="nav-number">2.0.3.</span> <span class="nav-text">本地方法栈(Native Method Stack)</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Java堆-Java-Heap"><span class="nav-number">2.0.4.</span> <span class="nav-text">Java堆(Java Heap)</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#方法区"><span class="nav-number">2.0.5.</span> <span class="nav-text">方法区</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>

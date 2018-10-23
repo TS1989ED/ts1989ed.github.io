@@ -87,20 +87,18 @@
 
 
 
-<meta name="description" content="裂纹识别的基本步骤 基于概率模型的裂纹识别算法总结 思路：仍然基于传统的模式识别方法，通过计算已知模板与图像的相关性，但是裂纹的形状与走向具有很大的随机性，引入概率论可以更好地建立模板。将概率论引入到理想裂纹模型的建立中，并将所建立的概率模型映射为理想模板。通过计算理想模板与图像像素点对应区域的Bhattacharyya系数来评定像素为裂纹的可能性。进而从X光图像中自动地提取裂纹轮廓。 关于Bha">
 <meta name="keywords" content="IT,Algorithm">
 <meta property="og:type" content="article">
 <meta property="og:title" content="裂纹识别初探">
 <meta property="og:url" content="http://www.ts1989.cn/2017/10/23/CrackIdentify/index.html">
 <meta property="og:site_name" content="TS1989">
-<meta property="og:description" content="裂纹识别的基本步骤 基于概率模型的裂纹识别算法总结 思路：仍然基于传统的模式识别方法，通过计算已知模板与图像的相关性，但是裂纹的形状与走向具有很大的随机性，引入概率论可以更好地建立模板。将概率论引入到理想裂纹模型的建立中，并将所建立的概率模型映射为理想模板。通过计算理想模板与图像像素点对应区域的Bhattacharyya系数来评定像素为裂纹的可能性。进而从X光图像中自动地提取裂纹轮廓。 关于Bha">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-702542.jpg">
 <meta property="og:image" content="http://ts1989ed.oss-cn-shenzhen.aliyuncs.com/Picture/Notes/CrackIdentify.png">
-<meta property="og:updated_time" content="2018-10-23T02:26:11.721Z">
+<meta property="og:updated_time" content="2018-10-23T02:28:44.842Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="裂纹识别初探">
-<meta name="twitter:description" content="裂纹识别的基本步骤 基于概率模型的裂纹识别算法总结 思路：仍然基于传统的模式识别方法，通过计算已知模板与图像的相关性，但是裂纹的形状与走向具有很大的随机性，引入概率论可以更好地建立模板。将概率论引入到理想裂纹模型的建立中，并将所建立的概率模型映射为理想模板。通过计算理想模板与图像像素点对应区域的Bhattacharyya系数来评定像素为裂纹的可能性。进而从X光图像中自动地提取裂纹轮廓。 关于Bha">
-<meta name="twitter:image" content="http://ts1989ed.oss-cn-shenzhen.aliyuncs.com/Picture/Notes/CrackIdentify.png">
+<meta name="twitter:image" content="https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-702542.jpg">
 
 
 
@@ -335,7 +333,7 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-23T10:14:52Z">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-23T18:14:52+08:00">
                 2017-10-23
               </time>
             
@@ -351,7 +349,7 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-10-23T02:26:11Z">
+              <time title="更新于" itemprop="dateModified" datetime="2018-10-23T10:28:44+08:00">
                 2018-10-23
               </time>
             
@@ -448,7 +446,9 @@
       
 
       
-        <h4 id="裂纹识别的基本步骤"><a href="#裂纹识别的基本步骤" class="headerlink" title="裂纹识别的基本步骤"></a>裂纹识别的基本步骤</h4><p><img src="http://ts1989ed.oss-cn-shenzhen.aliyuncs.com/Picture/Notes/CrackIdentify.png" alt=""></p>
+        <p><img src="https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-702542.jpg" alt=""></p>
+<a id="more"></a>
+<h4 id="裂纹识别的基本步骤"><a href="#裂纹识别的基本步骤" class="headerlink" title="裂纹识别的基本步骤"></a>裂纹识别的基本步骤</h4><p><img src="http://ts1989ed.oss-cn-shenzhen.aliyuncs.com/Picture/Notes/CrackIdentify.png" alt=""></p>
 <h4 id="基于概率模型的裂纹识别算法总结"><a href="#基于概率模型的裂纹识别算法总结" class="headerlink" title="基于概率模型的裂纹识别算法总结"></a>基于概率模型的裂纹识别算法总结</h4><ul>
 <li>思路：仍然基于传统的模式识别方法，通过计算已知模板与图像的相关性，但是裂纹的形状与走向具有很大的随机性，引入概率论可以更好地建立模板。将概率论引入到理想裂纹模型的建立中，并将所建立的概率模型映射为理想模板。通过计算理想模板与图像像素点对应区域的Bhattacharyya系数来评定像素为裂纹的可能性。进而从X光图像中自动地提取裂纹轮廓。</li>
 <li>关于Bhattacharyya系数（相似系数）：可以衡量两个向量间的相似程度。</li>

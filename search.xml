@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[Heart of a Lio]]></title>
     <url>%2F2018%2F10%2F17%2FLioMessi%2F</url>
-    <content type="text"><![CDATA[(function(){var player = new DPlayer({"container":document.getElementById("dplayer2"),"video":{"url":"http://ts1989ed.oss-cn-shenzhen.aliyuncs.com/Videos/Gatorade%20-%20Heart%20of%20a%20Lio.mp4"},"danmaku":{"id":"LioMessi","api":"https://api.prprpr.me/dplayer3/"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()]]></content>
+    <content type="text"><![CDATA[(function(){var player = new DPlayer({"container":document.getElementById("dplayer3"),"video":{"url":"http://ts1989ed.oss-cn-shenzhen.aliyuncs.com/Videos/Gatorade%20-%20Heart%20of%20a%20Lio.mp4"},"danmaku":{"id":"LioMessi","api":"https://api.prprpr.me/dplayer3/"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()]]></content>
       <categories>
         <category>Video</category>
       </categories>
@@ -123,14 +123,14 @@
   <entry>
     <title><![CDATA[Nike-Dream Crazy]]></title>
     <url>%2F2018%2F09%2F14%2FNike-Dream-Crazy%2F</url>
-    <content type="text"><![CDATA[(function(){var player = new DPlayer({"container":document.getElementById("dplayer3"),"video":{"url":"http://ts1989ed.oss-cn-shenzhen.aliyuncs.com/Nike%20-%20Dream%20Crazy.mp4"},"danmaku":{"id":"NikeDreamCrazy","api":"https://api.prprpr.me/dplayer3/"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()]]></content>
+    <content type="text"><![CDATA[(function(){var player = new DPlayer({"container":document.getElementById("dplayer2"),"video":{"url":"http://ts1989ed.oss-cn-shenzhen.aliyuncs.com/Nike%20-%20Dream%20Crazy.mp4"},"danmaku":{"id":"NikeDreamCrazy","api":"https://api.prprpr.me/dplayer3/"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()]]></content>
       <categories>
         <category>Video</category>
       </categories>
       <tags>
+        <tag>广告</tag>
         <tag>Share</tag>
         <tag>Inspirational</tag>
-        <tag>广告</tag>
       </tags>
   </entry>
   <entry>
@@ -142,6 +142,18 @@
       </categories>
       <tags>
         <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[裂纹识别初探]]></title>
+    <url>%2F2017%2F10%2F23%2FCrackIdentify%2F</url>
+    <content type="text"><![CDATA[裂纹识别的基本步骤 基于概率模型的裂纹识别算法总结 思路：仍然基于传统的模式识别方法，通过计算已知模板与图像的相关性，但是裂纹的形状与走向具有很大的随机性，引入概率论可以更好地建立模板。将概率论引入到理想裂纹模型的建立中，并将所建立的概率模型映射为理想模板。通过计算理想模板与图像像素点对应区域的Bhattacharyya系数来评定像素为裂纹的可能性。进而从X光图像中自动地提取裂纹轮廓。 关于Bhattacharyya系数（相似系数）：可以衡量两个向量间的相似程度。 裂纹中心点概率模型：通过观察裂纹图像发现裂纹中心点灰度低，两侧稍高，裂纹整体灰度地域背景灰度。根据裂纹图像的特点，将裂纹的中心曲线看作是裂纹中心点沿着曲线运动的轨迹。假设理想裂纹的中心点分布概率服从高斯分布，则任意剖面都满足高斯分布。模型窗口中心点是裂纹中心点的概率最大。 理想裂纹模板：基于裂纹灰度分布特点，将理想模型映射成理想模板。 裂纹识别算法： 图像预处理：（处理背景噪声） 斯通滤波：图像中的噪声绝大部分都位于图像频谱中的高频部分，通过高斯低通滤波器，滤除原始图像中的高频部分，避免理想模板与噪声发生误匹配。 阈值分割：采用改进的OSTU方法对图像进行灰度阈值分割，计算出合适的灰度阈值T 灰度拉伸：根据灰度阈值T，将灰度值高于T的像素灰度置为255.确定合适的门限值M，讲地域该门限的像素灰度置为0，根据先验经验，裂纹中心灰度的范围浮动低于10个灰度级左右。（二值化） 灰度拉伸的作用：增强原始图像的对比度，增加裂纹与模板的相似程度，从而增加了识别的准确性 算法流程： 根据式(2)将理想概率模型映射为理想模板矩阵 B。 统计模板矩阵 B 中元素对应的灰度概率分布，建立模 板的概率矩阵 B1，B1 中的元素为 B 中该元素灰度值在模板 中出现的概率。 对预处理后的原始图像进行逐像素循环，计算以当前 点为中心，模板矩阵区域大小内像素灰度分布概率为 i p ，再 根据 i p 与 B1 计算该区域对应的 Bhattacharyya 系数，并将其 作为当前点的替代值，遍历原始图像后生成相似系数矩阵。 将相似系数矩阵映射为灰度图像矩阵，并将其二值化。 对二值图像进行形态学操作，从而在二值图像中得到 裂纹的完整轮廓。将裂纹的轮廓和所在区域在原始图像中标 记出来，从而达到识别裂纹的目的。 形态学操作——消除二值化后的的噪声点 形态学操作流程：图像取反—关运算—膨胀—填充—腐蚀 形态学操作中膨胀和腐蚀的尺度必须一致，否则得到的轮廓尺寸便被人为地引入了方法误差。 经过形态学操作后得到了完整的裂纹轮廓，通过边缘检测算法，将该二值图像中的裂纹轮廓重绘于其对应的原始图像上，并在原始图像上标定出裂纹区域信息，从而完成了对裂纹的识别。 基于图像处理的微波处理材裂纹总结 思路：利用matlab软件中的图像处理模块，通过编程对微波处理木材表面裂纹的彩色扫描图像类型转换、图像增强、图像分割及图像形态学处理，提取图像中存在的裂纹，并最终对裂纹信息进行统计。 图像类型转换： Matlab图像处理模块提供了许多图像类型转换函数，通过这些函数可以实现RGB图像、灰度图像、索引图像及二值图像之间的相互变换。 由于图像后期处理都是在灰度图像基础上进行的，所以需要先将彩色扫描图像转换为灰度图像。在Matlab软件中，可通过调用rgb2gray函数实现彩色图像至灰度图像的转换。 图像增强： 在获取图像的过程中，各种干扰因素的存在会导致源图像中存在噪声，从而影响图像的质量。因此必须先对图像进行增强处理，图像增强可以将图像中感兴趣的特征有选择地突出，并衰减不需要的特征，以便后期对图像特征进行识别分析。 增强对比度：使源图像中各部分的反差增强。本文进行对比度增强处理的目的是使源图像中裂纹区域与其他部分的区别更为明显，主要通过imadjust函数实现。 锐化处理：经过以上的平滑滤波器对图像进行处理后，图像会有一定程度的模糊，进行锐化处理以突出图像的边缘信息，加强图像的轮廓特征，以便于人眼观察和机器识别。 二值图降噪处理：通过调用bwareaopen函数去除尺寸较小的噪声，经过降噪处理后，图像中有部分尺寸较大的噪声仍未去除，如果加大去噪过程中去除对象的尺度，会同时将部分较小的裂纹去除，因此不能采用该方法。而通过roifill函数，采用区域填充的方法可以达到去除大尺寸噪声的目的。 断裂纹闭合：采用形态学处理中的闭运算操作，通过创建一个平面的线性结构元素使裂纹的断裂区域闭合。 裂纹信息统计：采用matlab软件中形态学处理的操作，获得裂纹数量、裂纹长度、宽度及面积等信息，并由此计算机出图像中裂纹区域所占图像面积的比例。首先调用bwlabel函数对裂纹进行编号，可以统计图像中的裂纹数量。其次，利用regionprops函数可以计算出每条裂纹对应的长度、宽度和面积。]]></content>
+      <categories>
+        <category>Notes</category>
+      </categories>
+      <tags>
+        <tag>IT</tag>
+        <tag>Algorithm</tag>
       </tags>
   </entry>
   <entry>

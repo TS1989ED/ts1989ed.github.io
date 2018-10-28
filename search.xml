@@ -54,9 +54,9 @@
         <category>Tools</category>
       </categories>
       <tags>
-        <tag>tech</tag>
         <tag>Alfred</tag>
         <tag>Workflow</tag>
+        <tag>tech</tag>
       </tags>
   </entry>
   <entry>
@@ -67,9 +67,9 @@
         <category>Tools</category>
       </categories>
       <tags>
-        <tag>OSS</tag>
-        <tag>tech</tag>
         <tag>Alfred</tag>
+        <tag>tech</tag>
+        <tag>OSS</tag>
       </tags>
   </entry>
   <entry>
@@ -116,8 +116,8 @@
         <category>Notes</category>
       </categories>
       <tags>
-        <tag>OSS</tag>
         <tag>tech</tag>
+        <tag>OSS</tag>
       </tags>
   </entry>
   <entry>
@@ -142,6 +142,18 @@
       </categories>
       <tags>
         <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Java基础知识汇总]]></title>
+    <url>%2F2018%2F01%2F14%2FFirstInterviewForJava%2F</url>
+    <content type="text"><![CDATA[定义部分Q1: 什么是面向对象编程思想？ 面向对象是相对于面向过程的。面向对象不用关心处理问题的细节，只需要关心结果。 面向对象有三大特性：封装、继承和多态。封装的目的是复用；继承目的是共用；多态目的是多种实现。 Q2: Servlet的概念及功能？ Servlet是JavaEE规范中的Web开发组件 Servlet运行在服务器端，需要Servlet容器的支持，例如Tomcat 可以通过浏览器访问Servlet，Servlet可以生成动态页面返回给浏览器 Servlet也是一段代码，是一个Java类，这个Java类需要遵守一定的编写规范 Q3: JSP(Java Server Pages)概念？ JSP是JavaEE规范中的Web组件，用来编写动态页面 JSP运行在服务器端，本质是Servlet JSP文件以.jsp为后缀，在Eclipse的工程目录中存在WebContent目录下 JSP文件可以直接在浏览器中访问 JSP文件中的内容就是 HTML+Java代码，静态部分使用HTML和文本即可，动态部分使用Java代码 Q4: Servlet与JSP的作用？ JSP往往用来生成动态页面，而Servlet虽然可以生成动态页面却过于麻烦，往往用来接收JSP的请求，处理请求，然后跳转到不同JSP页面进行结果显示； Servlet和JSP之间的跳转有两种方式，分别是响应重定向和请求转发； 响应重定向相当于客户端重新发出请求，之前的请求不再保存；请求转发是把当前请求转发到下一个资源；比较常用的是请求转发； 请求参数是用户提交请求时，自动封装到请求对象中的一些输入信息，都是String类型； 请求属性可以是任意类型的对象，可以用setAttribute方法将对象作为属性存储到请求对象中； Q5: JDBC的概念？ JDBC是指Java数据库连接，是一种标准Java应用编程接口，用来连接Java编程语言和广泛的数据库 JDBC的本质是一种规范，它提供了一套完整的借口，允许便捷式访问到底层数据库，因此Java编写不同类型的可执行文件都可以使用JDBC驱动程序来访问数据库。 Q6: SSM框架的基本概念 SSM框架，是Spring + SpringMVC + MyBatis的缩写，是目前主流的Java EE框架，适用于搭建各种大型企业级应用系统。 SSM框架将系统划分为表现层，controller层，service层，DAO层 Spring实现业务对象管理，Mybatis座位数据对象的持久化引擎，Spring MVC负责请求的转发和视图管理 Q7: Spring的功能： Spring 容器提供了IOC机制，可以创建对象以及管理对象之间的调用关系，避免了硬编码造成的程序耦合 提供了AOP（面向切面编程方式）功能，可以实现很多特定功能 声明式事务控制处理 对JDBC进行了轻量级的封装，可以更加灵活的去操作数据库 提供了MVC设计模式的解决方案 提供了文件上传、定时器等常用工具类 对于其他优秀框架的支持（如：Struts、Hibernate、MyBatis、Quartz等） Spring的IoC容器是Spring的核心，Spring AOP是Spring框架的重要组成部分。 Q8: IoC (Inversion of Control) 控制反转？ 在传统的程序设计中，当调用者需要被调用者的协助时，通常由调用者来创建被调用者的实例。但在spring里创建被调用者的工作不再由调用者来完成，因此控制反转（IoC）；创建被调用者实例的工作通常由spring容器来完成，然后注入调用者，因此也被称为依赖注入（DI），依赖注入和控制反转是同一个概念。 IoC是解耦,提供一种构造对象的方式，使得一种功能能有多种实现，且不构成依赖。spring 的IOC的缺点：占用内存多、构造对象慢、启动慢。 控制被反转之后，获得依赖对象的过程由自身管理变为了由IOC容器主动注入。所以IoC也叫依赖注入（Dependency Injection）。实际上给出了实现IOC的方法：注入。所谓依赖注入，就是由IOC容器在运行期间，动态地将某种依赖关系注入到对象之中。 Q9: AOP和OOP的联系和区别？ OOP (Object Oriented Programming) 侧重于静态，名词，状态，组织，数据，载体是空间 AOP (Aspect Oriented Programming) 侧重于动态，动词，行为，调用，算法，载体是时间 OOP的封装要求将功能分散到不同的对象中去，在软件设计中称为指责分配。让不同的类实现不同的方法，这样代码就分散到一个个类中去了，降低了代码的复杂程度，使类可重用。面向对象设计让类与类之间无法联系，而不能将这些重复的代码统一起来。因此分散代码的同时，也增加了代码的重复性。也许有人会说，那好办啊，我们可以将这段代码写在一个独立的类独立的方法里，然后再在这两个类中调用。但是，这样一来，这两个类跟我们上面提到的独立的类就有耦合了，它的改变会影响这两个类。那么，有没有什么办法，能让我们在需要的时候，随意地加入代码呢？在运行时，动态地将代码切入到类的指定方法、指定位置上的编程思想就是面向切面的编程。有了AOP，我们就可以把几个类共有的代码，抽取到一个切片中，等到需要时再切入对象中去，从而改变其原有的行为。这样看来，AOP其实只是OOP的补充而已。OOP从横向上区分出一个个的类来，而AOP则从纵向上向对象中加入特定的代码。有了AOP，OOP变得立体了。从技术上来说，AOP基本上是通过代理机制实现的。AOP在编程历史上可以说是里程碑式的，对OOP编程是一种十分有益的补充。]]></content>
+      <categories>
+        <category>Notes</category>
+      </categories>
+      <tags>
+        <tag>IT</tag>
+        <tag>Summary</tag>
       </tags>
   </entry>
   <entry>

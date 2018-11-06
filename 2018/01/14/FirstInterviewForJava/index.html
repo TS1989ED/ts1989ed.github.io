@@ -94,7 +94,7 @@
 <meta property="og:site_name" content="TS1989">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://ts1989ed.oss-cn-shenzhen.aliyuncs.com/Picture/WallPaper/interview1.jpg">
-<meta property="og:updated_time" content="2018-10-28T05:49:33.362Z">
+<meta property="og:updated_time" content="2018-10-29T07:37:39.929Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Java基础知识汇总">
 <meta name="twitter:image" content="http://ts1989ed.oss-cn-shenzhen.aliyuncs.com/Picture/WallPaper/interview1.jpg">
@@ -332,7 +332,7 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-14T10:55:54Z">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-14T18:55:54+08:00">
                 2018-01-14
               </time>
             
@@ -348,8 +348,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-10-28T05:49:33Z">
-                2018-10-28
+              <time title="更新于" itemprop="dateModified" datetime="2018-10-29T15:37:39+08:00">
+                2018-10-29
               </time>
             
           </span>
@@ -408,7 +408,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  1,616字
+                  2,298字
                 </span>
               
 
@@ -424,7 +424,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  6分钟
+                  8分钟
                 </span>
               
             </div>
@@ -497,11 +497,33 @@
 <li>IoC是解耦,提供一种构造对象的方式，使得一种功能能有多种实现，且不构成依赖。spring 的IOC的缺点：占用内存多、构造对象慢、启动慢。</li>
 <li>控制被反转之后，获得依赖对象的过程由自身管理变为了由IOC容器主动注入。所以IoC也叫依赖注入（Dependency Injection）。实际上给出了实现IOC的方法：<strong>注入。所谓依赖注入，就是由IOC容器在运行期间，动态地将某种依赖关系注入到对象之中。</strong></li>
 </ul>
-<h5 id="Q9-AOP和OOP的联系和区别？"><a href="#Q9-AOP和OOP的联系和区别？" class="headerlink" title="Q9: AOP和OOP的联系和区别？"></a>Q9: AOP和OOP的联系和区别？</h5><ul>
+<h5 id="Q9-AOP和OOP的联系和区别？"><a href="#Q9-AOP和OOP的联系和区别？" class="headerlink" title="Q9: AOP和OOP的联系和区别？"></a>Q9: AOP和OOP的联系和区别？</h5><blockquote>
+<p>OOP的封装要求将功能分散到不同的对象中去，在软件设计中称为指责分配。让不同的类实现不同的方法，这样代码就分散到一个个类中去了，降低了代码的复杂程度，使类可重用。<br>面向对象设计让类与类之间无法联系，而不能将这些重复的代码统一起来。因此分散代码的同时，也增加了代码的重复性。<br>也许有人会说，那好办啊，我们可以将这段代码写在一个独立的类独立的方法里，然后再在这两个类中调用。但是，这样一来，这两个类跟我们上面提到的独立的类就有耦合了，它的改变会影响这两个类。那么，有没有什么办法，能让我们在需要的时候，随意地加入代码呢？<br><strong>在运行时，动态地将代码切入到类的指定方法、指定位置上的编程思想就是面向切面的编程。</strong><br>有了AOP，我们就可以把几个类共有的代码，抽取到一个切片中，等到需要时再切入对象中去，从而改变其原有的行为。这样看来，AOP其实只是OOP的补充而已。<strong>OOP从横向上区分出一个个的类来，而AOP则从纵向上向对象中加入特定的代码。有了AOP，OOP变得立体了。</strong>从技术上来说，AOP基本上是通过代理机制实现的。AOP在编程历史上可以说是里程碑式的，对OOP编程是一种十分有益的补充。</p>
+</blockquote>
+<ul>
 <li>OOP (Object Oriented Programming) 侧重于静态，名词，状态，组织，数据，载体是空间</li>
 <li>AOP (Aspect Oriented Programming) 侧重于动态，动词，行为，调用，算法，载体是时间</li>
 </ul>
-<p>OOP的封装要求将功能分散到不同的对象中去，在软件设计中称为指责分配。让不同的类实现不同的方法，这样代码就分散到一个个类中去了，降低了代码的复杂程度，使类可重用。<br>面向对象设计让类与类之间无法联系，而不能将这些重复的代码统一起来。因此分散代码的同时，也增加了代码的重复性。<br>也许有人会说，那好办啊，我们可以将这段代码写在一个独立的类独立的方法里，然后再在这两个类中调用。但是，这样一来，这两个类跟我们上面提到的独立的类就有耦合了，它的改变会影响这两个类。那么，有没有什么办法，能让我们在需要的时候，随意地加入代码呢？<br><strong>在运行时，动态地将代码切入到类的指定方法、指定位置上的编程思想就是面向切面的编程。</strong><br>有了AOP，我们就可以把几个类共有的代码，抽取到一个切片中，等到需要时再切入对象中去，从而改变其原有的行为。这样看来，AOP其实只是OOP的补充而已。<strong>OOP从横向上区分出一个个的类来，而AOP则从纵向上向对象中加入特定的代码。有了AOP，OOP变得立体了。</strong>从技术上来说，AOP基本上是通过代理机制实现的。AOP在编程历史上可以说是里程碑式的，对OOP编程是一种十分有益的补充。</p>
+<h5 id="Q10-MVC-Model-View-Controller-框架？"><a href="#Q10-MVC-Model-View-Controller-框架？" class="headerlink" title="Q10: MVC (Model-View-Controller) 框架？"></a>Q10: MVC (Model-View-Controller) 框架？</h5><ul>
+<li>MVC是一种软件设计典范，用一种业务逻辑、数据、界面显示分离的方法组织代码，将业务逻辑聚集到一个部件里面，在改进和个性化定制界面及用户交互的同时，不需要重新编写业务逻辑。</li>
+<li>MVC虽然分为三部分，但是MVC跟经典三层没有任何关系，它只存在于Web层，将Web层的数据、业务处理和显示分隔开。<ul>
+<li>model是应用程序中用于处理数据逻辑的部分。通常模型对象负责在数据库中存取数据。</li>
+<li>view是应用程序中处理数据显示的部分。通常视图是依据数据模型创建的。</li>
+<li>controller是应用程序中处理数据交互的部分。通常控制器负责从视图读取数据，控制用户输入，并向模型发送。</li>
+</ul>
+</li>
+<li>对于开发存在大量用户界面，并且业务逻辑复杂的大型应用程序，MVC将会使你的软件在健壮性、代码重用和结构方面上一个新的台阶。尽管在最初构建MVC框架时会花费一定的工作量，但从长远角度看，它会大大提高后期软件开发的效率。</li>
+<li>MVC是用来分割页面和数据库访问的框架，降低两者的耦合度，同时通过Controller的控制，使系统更加的灵活，代码更加健壮，复用性更强。</li>
+</ul>
+<h5 id="Q11-为什么使用MyBatis？"><a href="#Q11-为什么使用MyBatis？" class="headerlink" title="Q11: 为什么使用MyBatis？"></a>Q11: 为什么使用MyBatis？</h5><blockquote>
+<p>在我们传统的 JDBC 中，我们除了需要自己提供 SQL 外，还必须操作 Connection、Statment、ResultSet，不仅如此，为了访问不同的表，不同字段的数据，我们需要些很多雷同模板化的代码，闲的繁琐又枯燥。<br>而我们在使用了 MyBatis 之后，只需要提供 SQL 语句就好了，其余的诸如：建立连接、操作 Statment、ResultSet，处理 JDBC 相关异常等等都可以交给 MyBatis 去处理，我们的关注点于是可以就此集中在 SQL 语句上，关注在增删改查这些操作层面上。<br>并且 MyBatis 支持使用简单的 XML 或注解来配置和映射原生信息，将接口和 Java 的 POJOs(Plain Old Java Objects,普通的 Java对象)映射成数据库中的记录。</p>
+</blockquote>
+<h4 id="Java相关小知识点"><a href="#Java相关小知识点" class="headerlink" title="Java相关小知识点"></a>Java相关小知识点</h4><h5 id="01"><a href="#01" class="headerlink" title="01"></a>01</h5><ul>
+<li>run是线程执行的方法</li>
+<li>start是启动线程对象，使之从新建状态进入就绪状态</li>
+<li>sleep让线程睡眠，在此期间线程不消耗CPU资源</li>
+<li>suspend使线程挂起，暂停执行，如果想要恢复线程，必须由其它线程调用resume方法</li>
+</ul>
 
       
     </div>
@@ -632,7 +654,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">16</span>
+                  <span class="site-state-item-count">17</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -654,7 +676,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">17</span>
+                  <span class="site-state-item-count">18</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -743,7 +765,7 @@ show_date_time();
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#定义部分"><span class="nav-number">1.</span> <span class="nav-text">定义部分</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#Q1-什么是面向对象编程思想？"><span class="nav-number">1.1.</span> <span class="nav-text">Q1: 什么是面向对象编程思想？</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Q2-Servlet的概念及功能？"><span class="nav-number">1.2.</span> <span class="nav-text">Q2: Servlet的概念及功能？</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Q3-JSP-Java-Server-Pages-概念？"><span class="nav-number">1.3.</span> <span class="nav-text">Q3: JSP(Java Server Pages)概念？</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Q4-Servlet与JSP的作用？"><span class="nav-number">1.4.</span> <span class="nav-text">Q4: Servlet与JSP的作用？</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Q5-JDBC的概念？"><span class="nav-number">1.5.</span> <span class="nav-text">Q5: JDBC的概念？</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Q6-SSM框架的基本概念"><span class="nav-number">1.6.</span> <span class="nav-text">Q6: SSM框架的基本概念</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Q7-Spring的功能："><span class="nav-number">1.7.</span> <span class="nav-text">Q7: Spring的功能：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Q8-IoC-Inversion-of-Control-控制反转？"><span class="nav-number">1.8.</span> <span class="nav-text">Q8: IoC (Inversion of Control) 控制反转？</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Q9-AOP和OOP的联系和区别？"><span class="nav-number">1.9.</span> <span class="nav-text">Q9: AOP和OOP的联系和区别？</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#定义部分"><span class="nav-number">1.</span> <span class="nav-text">定义部分</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#Q1-什么是面向对象编程思想？"><span class="nav-number">1.1.</span> <span class="nav-text">Q1: 什么是面向对象编程思想？</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Q2-Servlet的概念及功能？"><span class="nav-number">1.2.</span> <span class="nav-text">Q2: Servlet的概念及功能？</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Q3-JSP-Java-Server-Pages-概念？"><span class="nav-number">1.3.</span> <span class="nav-text">Q3: JSP(Java Server Pages)概念？</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Q4-Servlet与JSP的作用？"><span class="nav-number">1.4.</span> <span class="nav-text">Q4: Servlet与JSP的作用？</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Q5-JDBC的概念？"><span class="nav-number">1.5.</span> <span class="nav-text">Q5: JDBC的概念？</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Q6-SSM框架的基本概念"><span class="nav-number">1.6.</span> <span class="nav-text">Q6: SSM框架的基本概念</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Q7-Spring的功能："><span class="nav-number">1.7.</span> <span class="nav-text">Q7: Spring的功能：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Q8-IoC-Inversion-of-Control-控制反转？"><span class="nav-number">1.8.</span> <span class="nav-text">Q8: IoC (Inversion of Control) 控制反转？</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Q9-AOP和OOP的联系和区别？"><span class="nav-number">1.9.</span> <span class="nav-text">Q9: AOP和OOP的联系和区别？</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Q10-MVC-Model-View-Controller-框架？"><span class="nav-number">1.10.</span> <span class="nav-text">Q10: MVC (Model-View-Controller) 框架？</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Q11-为什么使用MyBatis？"><span class="nav-number">1.11.</span> <span class="nav-text">Q11: 为什么使用MyBatis？</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Java相关小知识点"><span class="nav-number">2.</span> <span class="nav-text">Java相关小知识点</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#01"><span class="nav-number">2.1.</span> <span class="nav-text">01</span></a></li></ol></li></ol></div>
             
 
           </div>

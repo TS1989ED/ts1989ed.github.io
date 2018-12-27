@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[Heart of a Lio]]></title>
     <url>%2F2018%2F10%2F17%2FLioMessi%2F</url>
-    <content type="text"><![CDATA[(function(){var player = new DPlayer({"container":document.getElementById("dplayer2"),"video":{"url":"http://ts1989ed.oss-cn-shenzhen.aliyuncs.com/Videos/Gatorade%20-%20Heart%20of%20a%20Lio.mp4"},"danmaku":{"id":"LioMessi","api":"https://api.prprpr.me/dplayer3/"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()]]></content>
+    <content type="text"><![CDATA[(function(){var player = new DPlayer({"container":document.getElementById("dplayer3"),"video":{"url":"http://ts1989ed.oss-cn-shenzhen.aliyuncs.com/Videos/Gatorade%20-%20Heart%20of%20a%20Lio.mp4"},"danmaku":{"id":"LioMessi","api":"https://api.prprpr.me/dplayer3/"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()]]></content>
       <categories>
         <category>Video</category>
       </categories>
@@ -123,14 +123,14 @@
   <entry>
     <title><![CDATA[Nike-Dream Crazy]]></title>
     <url>%2F2018%2F09%2F14%2FNike-Dream-Crazy%2F</url>
-    <content type="text"><![CDATA[(function(){var player = new DPlayer({"container":document.getElementById("dplayer3"),"video":{"url":"http://ts1989ed.oss-cn-shenzhen.aliyuncs.com/Nike%20-%20Dream%20Crazy.mp4"},"danmaku":{"id":"NikeDreamCrazy","api":"https://api.prprpr.me/dplayer3/"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()]]></content>
+    <content type="text"><![CDATA[(function(){var player = new DPlayer({"container":document.getElementById("dplayer2"),"video":{"url":"http://ts1989ed.oss-cn-shenzhen.aliyuncs.com/Nike%20-%20Dream%20Crazy.mp4"},"danmaku":{"id":"NikeDreamCrazy","api":"https://api.prprpr.me/dplayer3/"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()]]></content>
       <categories>
         <category>Video</category>
       </categories>
       <tags>
+        <tag>广告</tag>
         <tag>Share</tag>
         <tag>Inspirational</tag>
-        <tag>广告</tag>
       </tags>
   </entry>
   <entry>

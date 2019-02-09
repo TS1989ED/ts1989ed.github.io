@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.ts1989.cn/"/>
-  <updated>2019-02-09T03:40:11.120Z</updated>
+  <updated>2019-01-02T09:47:16.063Z</updated>
   <id>http://www.ts1989.cn/</id>
   
   <author>
@@ -15,30 +15,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>LLDQ</title>
-    <link href="http://www.ts1989.cn/2019/02/09/LLDQ/"/>
-    <id>http://www.ts1989.cn/2019/02/09/LLDQ/</id>
-    <published>2019-02-09T11:35:07.000Z</published>
-    <updated>2019-02-09T03:40:11.120Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><div id="dplayer2" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer2"),"video":{"url":"http://m.ashvsash.top/jx/?url=https://youku.com-l-youku.com/20190207/20335_d1f19bfb/index.m3u8"},"danmaku":{"id":"LLDQ","api":"https://api.prprpr.me/dplayer3/"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script><a id="more"></a>]]></content>
-    
-    <summary type="html">
-    
-      Just for share
-    
-    </summary>
-    
-      <category term="Video" scheme="http://www.ts1989.cn/categories/Video/"/>
-    
-    
-      <category term="Share" scheme="http://www.ts1989.cn/tags/Share/"/>
-    
-      <category term="Movie" scheme="http://www.ts1989.cn/tags/Movie/"/>
-    
-  </entry>
   
   <entry>
     <title>深度学习初探</title>

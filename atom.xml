@@ -117,7 +117,7 @@
     <published>2018-10-04T14:04:30.000Z</published>
     <updated>2018-10-04T07:27:49.972Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><div id="dplayer4" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer4"),"video":{"url":"http://ts1989ed.oss-cn-shenzhen.aliyuncs.com/T-Bag.mp4"},"danmaku":{"id":"TBagPrelude","api":"https://api.prprpr.me/dplayer3/"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script><a id="more"></a>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><div id="dplayer5" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer5"),"video":{"url":"http://ts1989ed.oss-cn-shenzhen.aliyuncs.com/T-Bag.mp4"},"danmaku":{"id":"TBagPrelude","api":"https://api.prprpr.me/dplayer3/"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script><a id="more"></a>]]></content>
     
     <summary type="html">
     
@@ -311,7 +311,7 @@
     <published>2018-09-13T23:22:28.000Z</published>
     <updated>2018-09-19T01:27:23.781Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><div id="dplayer3" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer3"),"video":{"url":"http://ts1989ed.oss-cn-shenzhen.aliyuncs.com/Nike%20-%20Dream%20Crazy.mp4"},"danmaku":{"id":"NikeDreamCrazy","api":"https://api.prprpr.me/dplayer3/"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script><a id="more"></a>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><div id="dplayer4" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer4"),"video":{"url":"http://ts1989ed.oss-cn-shenzhen.aliyuncs.com/Nike%20-%20Dream%20Crazy.mp4"},"danmaku":{"id":"NikeDreamCrazy","api":"https://api.prprpr.me/dplayer3/"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script><a id="more"></a>]]></content>
     
     <summary type="html">
     
@@ -455,7 +455,7 @@
     <published>2017-09-16T15:49:20.000Z</published>
     <updated>2019-07-06T02:12:45.429Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><div id="dplayer0" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"video":{"url":"https://ts1989ed.oss-cn-shenzhen.aliyuncs.com/IMG_7305.mov"},"danmaku":{"id":"NanJing","api":"https://api.prprpr.me/dplayer3/"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script><a id="more"></a>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><div id="dplayer3" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer3"),"video":{"url":"https://ts1989ed.oss-cn-shenzhen.aliyuncs.com/IMG_7305.mov"},"danmaku":{"id":"NanJing","api":"https://api.prprpr.me/dplayer3/"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script><a id="more"></a>]]></content>
     
     <summary type="html">
     

@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[New Airpods]]></title>
     <url>%2F2019%2F06%2F28%2FAirpodsbounce%2F</url>
-    <content type="text"><![CDATA[(function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"video":{"url":"http://ts1989ed.oss-cn-shenzhen.aliyuncs.com/Bounce.mp4"},"danmaku":{"id":"Bounce","api":"https://api.prprpr.me/dplayer/"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()]]></content>
+    <content type="text"><![CDATA[(function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"video":{"url":"http://ts1989ed.oss-cn-shenzhen.aliyuncs.com/Bounce.mp4"},"danmaku":{"id":"Bounce","api":"https://api.prprpr.me/dplayer3/"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()]]></content>
       <categories>
         <category>Ads</category>
       </categories>

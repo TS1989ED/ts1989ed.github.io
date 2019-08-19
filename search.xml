@@ -72,7 +72,7 @@
   <entry>
     <title><![CDATA[Heart of a Lio]]></title>
     <url>%2F2018%2F10%2F17%2FLioMessi%2F</url>
-    <content type="text"><![CDATA[(function(){var player = new DPlayer({"container":document.getElementById("dplayer3"),"video":{"url":"http://ts1989ed.oss-cn-shenzhen.aliyuncs.com/Videos/Gatorade%20-%20Heart%20of%20a%20Lio.mp4"},"danmaku":{"id":"LioMessi","api":"https://api.prprpr.me/dplayer3/"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()]]></content>
+    <content type="text"><![CDATA[(function(){var player = new DPlayer({"container":document.getElementById("dplayer4"),"video":{"url":"http://ts1989ed.oss-cn-shenzhen.aliyuncs.com/Videos/Gatorade%20-%20Heart%20of%20a%20Lio.mp4"},"danmaku":{"id":"LioMessi","api":"https://api.prprpr.me/dplayer3/"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()]]></content>
       <categories>
         <category>Video</category>
       </categories>
@@ -276,7 +276,7 @@
   <entry>
     <title><![CDATA[南京一日游XD]]></title>
     <url>%2F2017%2F09%2F16%2FNanJing%2F</url>
-    <content type="text"><![CDATA[(function(){var player = new DPlayer({"container":document.getElementById("dplayer4"),"video":{"url":"https://ts1989ed.oss-cn-shenzhen.aliyuncs.com/IMG_7305.mov"},"danmaku":{"id":"NanJing","api":"https://api.prprpr.me/dplayer3/"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()]]></content>
+    <content type="text"><![CDATA[(function(){var player = new DPlayer({"container":document.getElementById("dplayer3"),"video":{"url":"https://ts1989ed.oss-cn-shenzhen.aliyuncs.com/IMG_7305.mov"},"danmaku":{"id":"NanJing","api":"https://api.prprpr.me/dplayer3/"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()]]></content>
       <categories>
         <category>Vlog</category>
       </categories>

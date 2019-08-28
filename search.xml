@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[Daenerys Targaryen - The Queen]]></title>
     <url>%2F2019%2F08%2F29%2FDaenerys-Targaryen%2F</url>
-    <content type="text"><![CDATA[(function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"video":{"url":"http://ts1989ed.oss-cn-shenzhen.aliyuncs.com/Daenerys%20Targaryen%20-%20The%20Queen.gle.mp4","pic":"http://ts1989ed.oss-cn-shenzhen.aliyuncs.com/2019-08-28%2F1566927552.png"},"danmaku":{"id":"Khaleesi","api":"https://dplayer.moerats.com/"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()]]></content>
+    <content type="text"><![CDATA[(function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"video":{"url":"http://ts1989ed.oss-cn-shenzhen.aliyuncs.com/Daenerys1.mp4","pic":"http://ts1989ed.oss-cn-shenzhen.aliyuncs.com/2019-08-28%2F1566927552.png"},"danmaku":{"id":"Khaleesi","api":"https://dplayer.moerats.com/"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()]]></content>
       <categories>
         <category>Video</category>
       </categories>

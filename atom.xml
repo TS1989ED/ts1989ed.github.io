@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.ts1989.cn/"/>
-  <updated>2019-08-28T03:45:47.006Z</updated>
+  <updated>2019-08-28T03:58:58.376Z</updated>
   <id>http://www.ts1989.cn/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="http://www.ts1989.cn/2019/08/29/Daenerys-Targaryen/"/>
     <id>http://www.ts1989.cn/2019/08/29/Daenerys-Targaryen/</id>
     <published>2019-08-28T16:52:30.000Z</published>
-    <updated>2019-08-28T03:45:47.006Z</updated>
+    <updated>2019-08-28T03:58:58.376Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><div id="dplayer0" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"video":{"url":"http://ts1989ed.oss-cn-shenzhen.aliyuncs.com/Daenerys%20Targaryen%20-%20The%20Queen.gle.mp4","pic":"http://ts1989ed.oss-cn-shenzhen.aliyuncs.com/2019-08-28%2F1566927552.png"},"danmaku":{"id":"Khaleesi","api":"https://dplayer.moerats.com/"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script><a id="more"></a>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><div id="dplayer0" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"video":{"url":"http://ts1989ed.oss-cn-shenzhen.aliyuncs.com/Daenerys1.mp4","pic":"http://ts1989ed.oss-cn-shenzhen.aliyuncs.com/2019-08-28%2F1566927552.png"},"danmaku":{"id":"Khaleesi","api":"https://dplayer.moerats.com/"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script><a id="more"></a>]]></content>
     
     <summary type="html">
     

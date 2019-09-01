@@ -86,7 +86,7 @@
   <entry>
     <title><![CDATA[HOW TO SUCCEED IN LIFE]]></title>
     <url>%2F2019%2F05%2F23%2FJackma%2F</url>
-    <content type="text"><![CDATA[(function(){var player = new DPlayer({"container":document.getElementById("dplayer4"),"video":{"url":"http://ts1989ed.oss-cn-shenzhen.aliyuncs.com/Jackma1.mp4","pic":"http://ts1989ed.oss-cn-shenzhen.aliyuncs.com/2019-08-29%2F1567048794.png"},"danmaku":{"id":"Jackma","api":"https://dplayer.moerats.com/"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()]]></content>
+    <content type="text"><![CDATA[(function(){var player = new DPlayer({"container":document.getElementById("dplayer3"),"video":{"url":"http://ts1989ed.oss-cn-shenzhen.aliyuncs.com/Jackma1.mp4","pic":"http://ts1989ed.oss-cn-shenzhen.aliyuncs.com/2019-08-29%2F1567048794.png"},"danmaku":{"id":"Jackma","api":"https://dplayer.moerats.com/"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()]]></content>
       <categories>
         <category>Video</category>
       </categories>
@@ -105,6 +105,18 @@
       <tags>
         <tag>IT</tag>
         <tag>About</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Understanding RNN & LSTM]]></title>
+    <url>%2F2019%2F01%2F05%2FLSTM%2F</url>
+    <content type="text"><![CDATA[(function(){var player = new DPlayer({"container":document.getElementById("dplayer4"),"video":{"url":"http://ts1989ed.oss-cn-shenzhen.aliyuncs.com/LSTM1.mp4","pic":"http://ts1989ed.oss-cn-shenzhen.aliyuncs.com/2019-09-01%2F1567318915.png"},"danmaku":{"id":"LSTM","api":"https://dplayer.moerats.com/"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()]]></content>
+      <categories>
+        <category>Video</category>
+      </categories>
+      <tags>
+        <tag>Share</tag>
+        <tag>LSTM</tag>
       </tags>
   </entry>
   <entry>
@@ -303,18 +315,6 @@
         <tag>IT</tag>
         <tag>SQL</tag>
         <tag>Oracle</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[Understanding RNN & LSTM]]></title>
-    <url>%2F2018%2F05%2F24%2FLSTM%2F</url>
-    <content type="text"><![CDATA[(function(){var player = new DPlayer({"container":document.getElementById("dplayer3"),"video":{"url":"http://ts1989ed.oss-cn-shenzhen.aliyuncs.com/LSTM1.mp4","pic":"http://ts1989ed.oss-cn-shenzhen.aliyuncs.com/2019-09-01%2F1567318915.png"},"danmaku":{"id":"LSTM","api":"https://dplayer.moerats.com/"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()]]></content>
-      <categories>
-        <category>Video</category>
-      </categories>
-      <tags>
-        <tag>Share</tag>
-        <tag>LSTM</tag>
       </tags>
   </entry>
   <entry>

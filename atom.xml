@@ -193,7 +193,7 @@
     <published>2019-05-23T13:21:32.000Z</published>
     <updated>2019-08-29T03:27:48.776Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><div id="dplayer3" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer3"),"video":{"url":"http://ts1989ed.oss-cn-shenzhen.aliyuncs.com/Jackma1.mp4","pic":"http://ts1989ed.oss-cn-shenzhen.aliyuncs.com/2019-08-29%2F1567048794.png"},"danmaku":{"id":"Jackma","api":"https://dplayer.moerats.com/"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script><a id="more"></a>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><div id="dplayer4" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer4"),"video":{"url":"http://ts1989ed.oss-cn-shenzhen.aliyuncs.com/Jackma1.mp4","pic":"http://ts1989ed.oss-cn-shenzhen.aliyuncs.com/2019-08-29%2F1567048794.png"},"danmaku":{"id":"Jackma","api":"https://dplayer.moerats.com/"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script><a id="more"></a>]]></content>
     
     <summary type="html">
     
@@ -341,7 +341,7 @@
     <published>2018-10-16T16:52:30.000Z</published>
     <updated>2019-08-28T03:38:56.435Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><div id="dplayer4" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer4"),"video":{"url":"http://ts1989ed.oss-cn-shenzhen.aliyuncs.com/Videos/Gatorade%20-%20Heart%20of%20a%20Lio.mp4","pic":"http://ts1989ed.oss-cn-shenzhen.aliyuncs.com/2019-08-28%2F1566963521.png"},"danmaku":{"id":"LioMessi","api":"https://dplayer.moerats.com/"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script><a id="more"></a>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><div id="dplayer5" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer5"),"video":{"url":"http://ts1989ed.oss-cn-shenzhen.aliyuncs.com/Videos/Gatorade%20-%20Heart%20of%20a%20Lio.mp4","pic":"http://ts1989ed.oss-cn-shenzhen.aliyuncs.com/2019-08-28%2F1566963521.png"},"danmaku":{"id":"LioMessi","api":"https://dplayer.moerats.com/"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script><a id="more"></a>]]></content>
     
     <summary type="html">
     

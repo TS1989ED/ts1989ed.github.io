@@ -7,7 +7,8 @@
 
 <html class="theme-next mist use-motion" lang="zh-Hans">
 <head>
-  <meta charset="UTF-8"/>
+  <meta name="referrer" content="no-referrer">
+<meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 <meta name="theme-color" content="#222">
@@ -57,6 +58,7 @@
   <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
 
 
+<meta name="referrer" content="no-referrer">
 
 
 
@@ -131,6 +133,7 @@
   <link rel="canonical" href="http://www.ts1989.cn/2018/12/12/Python-data-analysis/"/>
 
 
+<meta name="referrer" content="no-referrer">
 
 
 
@@ -156,7 +159,8 @@
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-wrapper">
+      <div class="header-inner"><meta name="referrer" content="no-referrer">
+<div class="site-brand-wrapper">
   <div class="site-meta ">
     
 
@@ -279,7 +283,7 @@
   
 </nav>
 
-
+<meta name="referrer" content="no-referrer">
 
  </div>
     </header>
@@ -530,6 +534,7 @@
 <h4 id="模式修正符"><a href="#模式修正符" class="headerlink" title="模式修正符"></a>模式修正符</h4><blockquote>
 <p>所谓的模式修正符，即可以在不改变正则表达式的情况下，通过模式修正符改变正则表达式的含义，从而实现一些匹配结果的调整等功能。</p>
 </blockquote>
+<div class="table-container">
 <table>
 <thead>
 <tr>
@@ -572,6 +577,7 @@
 </tr>
 </tbody>
 </table>
+</div>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> re</span><br><span class="line"></span><br><span class="line">pat = <span class="string">".python..."</span></span><br><span class="line"></span><br><span class="line">string = <span class="string">"sfafaPythonfaf"</span></span><br><span class="line"></span><br><span class="line">rst = re.search(pat,string,re.I) <span class="comment"># 模式修正；不区分大小写</span></span><br><span class="line"></span><br><span class="line">print(rst)</span><br></pre></td></tr></table></figure>
 <h4 id="贪婪模式与懒惰模式"><a href="#贪婪模式与懒惰模式" class="headerlink" title="贪婪模式与懒惰模式"></a>贪婪模式与懒惰模式</h4><blockquote>
 <p>贪婪模式的核心点就是尽可能多的匹配，而懒惰模式的核心点就是尽可能少的匹配。</p>
@@ -580,6 +586,7 @@
 <h4 id="正则表达式函数"><a href="#正则表达式函数" class="headerlink" title="正则表达式函数"></a>正则表达式函数</h4><blockquote>
 <p>正则表达式函数有re.match()函数、re.search()函数、全局匹配函数、re.sub()函数</p>
 </blockquote>
+<div class="table-container">
 <table>
 <thead>
 <tr>
@@ -602,6 +609,7 @@
 </tr>
 </tbody>
 </table>
+</div>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rst = re.compile(pat1).findall(string)</span><br></pre></td></tr></table></figure>
 <h4 id="常见正则实例"><a href="#常见正则实例" class="headerlink" title="常见正则实例"></a>常见正则实例</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> re</span><br><span class="line"></span><br><span class="line">pat = <span class="string">"[a-zA-Z]+://[^\s]*[.com|.cn]"</span></span><br><span class="line"></span><br><span class="line">string = <span class="string">'&lt;a herf="http://www.baidu,com&gt;hshfhksdf&lt;/a&gt;'</span></span><br><span class="line"></span><br><span class="line">rst = re.compile(pat).findall(string)</span><br><span class="line"></span><br><span class="line">print(rst)</span><br></pre></td></tr></table></figure>
 <h4 id="简单的爬虫"><a href="#简单的爬虫" class="headerlink" title="简单的爬虫"></a>简单的爬虫</h4><h5 id="提取CSDN的QQ群"><a href="#提取CSDN的QQ群" class="headerlink" title="提取CSDN的QQ群"></a>提取CSDN的QQ群</h5><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> urllib.request</span><br><span class="line"><span class="keyword">import</span> re</span><br><span class="line"><span class="keyword">import</span> ssl</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">pat = <span class="string">"学员群(.*?)&lt;/span&gt;"</span></span><br><span class="line"></span><br><span class="line">ssl._create_default_https_context = ssl._create_unverified_context</span><br><span class="line"></span><br><span class="line">data = urllib.request.urlopen(<span class="string">"https://edu.csdn.net/course/detail/4358"</span>).read()</span><br><span class="line"></span><br><span class="line">result = re.compile(pat).findall(str(data))</span><br><span class="line"></span><br><span class="line">print(result)</span><br></pre></td></tr></table></figure>
@@ -737,7 +745,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">40</span>
+                  <span class="site-state-item-count">38</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -748,7 +756,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">5</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -759,7 +767,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">30</span>
+                  <span class="site-state-item-count">27</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -808,7 +816,8 @@
             </div>
           
 
-          <div id="days"></div>
+          <meta name="referrer" content="no-referrer">
+<div id="days"></div>
     <script>
     function show_date_time(){
         window.setTimeout("show_date_time()", 1000);
@@ -868,7 +877,7 @@ show_date_time();
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2023</span>
   <span class="with-love" id="heart">
     <i class="fa fa-heart"></i>
   </span>
@@ -1403,6 +1412,8 @@ show_date_time();
   
 
   
+  
+
 
   
 

@@ -7,7 +7,8 @@
 
 <html class="theme-next mist use-motion" lang="zh-Hans">
 <head>
-  <meta charset="UTF-8"/>
+  <meta name="referrer" content="no-referrer">
+<meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 <meta name="theme-color" content="#222">
@@ -57,6 +58,7 @@
   <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
 
 
+<meta name="referrer" content="no-referrer">
 
 
 
@@ -157,6 +159,7 @@
   <link rel="canonical" href="http://www.ts1989.cn/2019/01/03/DLWithPyFirstExlpore/"/>
 
 
+<meta name="referrer" content="no-referrer">
 
 
 
@@ -182,7 +185,8 @@
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-wrapper">
+      <div class="header-inner"><meta name="referrer" content="no-referrer">
+<div class="site-brand-wrapper">
   <div class="site-meta ">
     
 
@@ -305,7 +309,7 @@
   
 </nav>
 
-
+<meta name="referrer" content="no-referrer">
 
  </div>
     </header>
@@ -647,11 +651,11 @@
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">img = np.asarray(image</span><br></pre></td></tr></table></figure>
 <p>如果出现read-only错误，并不是转换的错误，一般是你读取的图片的时候，默认选择的是”r”,”rb”模式有关。</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">img.flags.writeable = <span class="keyword">True</span> <span class="comment"># 将数组改为读写模式</span></span><br></pre></td></tr></table></figure>
-<ol start="2">
+<ol>
 <li>array转换成image</li>
 </ol>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Image.fromarray(np.unit8(img))</span><br></pre></td></tr></table></figure>
-<h6 id="关于load-mnist函数的解释"><a href="#关于load-mnist函数的解释" class="headerlink" title="关于load_mnist函数的解释"></a>关于load_mnist函数的解释</h6><p>位于<code></code>dataset/mnist.py<code>的</code>load_mnist`函数：</p>
+<h6 id="关于load-mnist函数的解释"><a href="#关于load-mnist函数的解释" class="headerlink" title="关于load_mnist函数的解释"></a>关于load_mnist函数的解释</h6><p>位于<code>`dataset/mnist.py</code>的<code>load_mnist</code>函数：</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">load_mnist</span><span class="params">(normalize=True, flatten=True, one_hot_label=False)</span>:</span></span><br><span class="line">    </span><br><span class="line">    <span class="comment"># 如果数据不存在，调用init方法下载并转换</span></span><br><span class="line">    <span class="keyword">if</span> <span class="keyword">not</span> os.path.exists(save_file):</span><br><span class="line">        init_mnist()</span><br><span class="line">        </span><br><span class="line">    <span class="comment"># with能够自动处理上下文环境产生的异常</span></span><br><span class="line">    <span class="keyword">with</span> open(save_file, <span class="string">'rb'</span>) <span class="keyword">as</span> f:</span><br><span class="line">        dataset = pickle.load(f)</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">if</span> normalize:</span><br><span class="line">        <span class="keyword">for</span> key <span class="keyword">in</span> (<span class="string">'train_img'</span>, <span class="string">'test_img'</span>):</span><br><span class="line">            dataset[key] = dataset[key].astype(np.float32)</span><br><span class="line">            dataset[key] /= <span class="number">255.0</span></span><br><span class="line">            </span><br><span class="line">    <span class="keyword">if</span> one_hot_label:</span><br><span class="line">        dataset[<span class="string">'train_label'</span>] = _change_one_hot_label(dataset[<span class="string">'train_label'</span>])</span><br><span class="line">        dataset[<span class="string">'test_label'</span>] = _change_one_hot_label(dataset[<span class="string">'test_label'</span>])</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">if</span> <span class="keyword">not</span> flatten:</span><br><span class="line">         <span class="keyword">for</span> key <span class="keyword">in</span> (<span class="string">'train_img'</span>, <span class="string">'test_img'</span>):</span><br><span class="line">            dataset[key] = dataset[key].reshape(<span class="number">-1</span>, <span class="number">1</span>, <span class="number">28</span>, <span class="number">28</span>)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> (dataset[<span class="string">'train_img'</span>], dataset[<span class="string">'train_label'</span>]), (dataset[<span class="string">'test_img'</span>], dataset[<span class="string">'test_label'</span>])</span><br></pre></td></tr></table></figure>
 <p>通过传入布尔值来执行相关操作的函数：</p>
 <ol>
@@ -675,8 +679,6 @@
 </ol>
 <blockquote>
 <p>「注:」此处是假设学习已经完成，学习中的参数保存在sample_weight.pkl文件中，在推理阶段，直接加载这些学习到的参数</p>
-</blockquote>
-<blockquote>
 <p>在刚才的例子中，作为一种预处理，我们将各个像素值除以 255，进行了简单的正规化。实际上，很多预处理都会考虑到数据的整体分布。比如，利用数据整体的均值或标准差，移动数据，使数据整体以 0 为中心分布，或者进行正规化，把数据的延展控制在一定范围内。除此之外，还有将数据整体的分布形状均匀化的方法，即数据<strong>白化</strong>(whitening)等。</p>
 </blockquote>
 <h5 id="批处理"><a href="#批处理" class="headerlink" title="批处理"></a>批处理</h5><p>多维数组对应维度的元素个数一致，输入由784个元素组成的一维数组，最终输出元素个数为10的一维数组：</p>
@@ -845,7 +847,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">40</span>
+                  <span class="site-state-item-count">38</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -856,7 +858,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">5</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -867,7 +869,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">30</span>
+                  <span class="site-state-item-count">27</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -916,7 +918,8 @@
             </div>
           
 
-          <div id="days"></div>
+          <meta name="referrer" content="no-referrer">
+<div id="days"></div>
     <script>
     function show_date_time(){
         window.setTimeout("show_date_time()", 1000);
@@ -976,7 +979,7 @@ show_date_time();
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2023</span>
   <span class="with-love" id="heart">
     <i class="fa fa-heart"></i>
   </span>
@@ -1511,6 +1514,8 @@ show_date_time();
   
 
   
+  
+
 
   
 

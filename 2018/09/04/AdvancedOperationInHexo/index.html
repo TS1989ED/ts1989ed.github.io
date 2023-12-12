@@ -7,7 +7,8 @@
 
 <html class="theme-next mist use-motion" lang="zh-Hans">
 <head>
-  <meta charset="UTF-8"/>
+  <meta name="referrer" content="no-referrer">
+<meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 <meta name="theme-color" content="#222">
@@ -57,6 +58,7 @@
   <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
 
 
+<meta name="referrer" content="no-referrer">
 
 
 
@@ -130,6 +132,7 @@
   <link rel="canonical" href="http://www.ts1989.cn/2018/09/04/AdvancedOperationInHexo/"/>
 
 
+<meta name="referrer" content="no-referrer">
 
 
 
@@ -155,7 +158,8 @@
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-wrapper">
+      <div class="header-inner"><meta name="referrer" content="no-referrer">
+<div class="site-brand-wrapper">
   <div class="site-meta ">
     
 
@@ -278,7 +282,7 @@
   
 </nav>
 
-
+<meta name="referrer" content="no-referrer">
 
  </div>
     </header>
@@ -409,7 +413,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  2,945字
+                  2,946字
                 </span>
               
 
@@ -513,7 +517,7 @@
 <blockquote>
 <p>password: <code>password</code></p>
 </blockquote>
-<h3 id="侧边栏推荐阅读"><a href="#侧边栏推荐阅读" class="headerlink" title="侧边栏推荐阅读"></a>侧边栏推荐阅读</h3><p>打开<span id="inline-purple">主题配置文件</span></p>修改成这样就行了（links里面写你想要推荐的链接）：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"># Blogrolls</span><br><span class="line">links_title: 推荐阅读</span><br><span class="line">#links_layout: block</span><br><span class="line">links_layout: inline</span><br><span class="line">links:</span><br><span class="line">  优设: http://www.uisdc.com/</span><br><span class="line">  张鑫旭: http://www.zhangxinxu.com/</span><br><span class="line">  Web前端导航: http://www.alloyteam.com/nav/</span><br><span class="line">  前端书籍资料: http://www.36zhen.com/t?id=3448</span><br><span class="line">  百度前端技术学院: http://ife.baidu.com/</span><br><span class="line">  google前端开发基础: http://wf.uisdc.com/cn/</span><br></pre></td></tr></table></figure><p></p>
+<h3 id="侧边栏推荐阅读"><a href="#侧边栏推荐阅读" class="headerlink" title="侧边栏推荐阅读"></a>侧边栏推荐阅读</h3><p>打开<span id="inline-purple">主题配置文件&lt;/p&gt;修改成这样就行了（links里面写你想要推荐的链接）：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"># Blogrolls</span><br><span class="line">links_title: 推荐阅读</span><br><span class="line">#links_layout: block</span><br><span class="line">links_layout: inline</span><br><span class="line">links:</span><br><span class="line">  优设: http://www.uisdc.com/</span><br><span class="line">  张鑫旭: http://www.zhangxinxu.com/</span><br><span class="line">  Web前端导航: http://www.alloyteam.com/nav/</span><br><span class="line">  前端书籍资料: http://www.36zhen.com/t?id=3448</span><br><span class="line">  百度前端技术学院: http://ife.baidu.com/</span><br><span class="line">  google前端开发基础: http://wf.uisdc.com/cn/</span><br></pre></td></tr></table></figure></span></p>
 <h3 id="新增评论系统"><a href="#新增评论系统" class="headerlink" title="新增评论系统"></a>新增评论系统</h3><h4 id="去除评论系统下方的powered-by-valine"><a href="#去除评论系统下方的powered-by-valine" class="headerlink" title="去除评论系统下方的powered by valine"></a>去除评论系统下方的<code>powered by valine</code></h4><p>打开<code>/next/layout/_third-party/comments/valine.swig</code>文件，<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">new Valine(&#123;</span><br><span class="line">    el: '#comments' ,</span><br><span class="line">    verify: &#123;&#123; theme.valine.verify &#125;&#125;,</span><br><span class="line">    notify: &#123;&#123; theme.valine.notify &#125;&#125;,</span><br><span class="line">    appId: '&#123;&#123; theme.valine.appid &#125;&#125;',</span><br><span class="line">    appKey: '&#123;&#123; theme.valine.appkey &#125;&#125;',</span><br><span class="line">    placeholder: '&#123;&#123; theme.valine.placeholder &#125;&#125;',</span><br><span class="line">    avatar:'&#123;&#123; theme.valine.avatar &#125;&#125;',</span><br><span class="line">    guest_info:guest,</span><br><span class="line">    pageSize:'&#123;&#123; theme.valine.pageSize &#125;&#125;' || 10,</span><br><span class="line">&#125;);</span><br><span class="line">//新增以下代码即可，可以移除.info下所有子节点。</span><br><span class="line">var infoEle = document.querySelector('#comments .info');</span><br><span class="line">if (infoEle &amp;&amp; infoEle.childNodes &amp;&amp; infoEle.childNodes.length &gt; 0)&#123;</span><br><span class="line">  infoEle.childNodes.forEach(function(item) &#123;</span><br><span class="line">    item.parentNode.removeChild(item);</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 
       
@@ -643,7 +647,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">40</span>
+                  <span class="site-state-item-count">38</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -654,7 +658,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">5</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -665,7 +669,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">30</span>
+                  <span class="site-state-item-count">27</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -714,7 +718,8 @@
             </div>
           
 
-          <div id="days"></div>
+          <meta name="referrer" content="no-referrer">
+<div id="days"></div>
     <script>
     function show_date_time(){
         window.setTimeout("show_date_time()", 1000);
@@ -774,7 +779,7 @@ show_date_time();
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2023</span>
   <span class="with-love" id="heart">
     <i class="fa fa-heart"></i>
   </span>
@@ -1309,6 +1314,8 @@ show_date_time();
   
 
   
+  
+
 
   
 

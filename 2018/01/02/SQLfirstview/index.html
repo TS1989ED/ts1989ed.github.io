@@ -7,7 +7,8 @@
 
 <html class="theme-next mist use-motion" lang="zh-Hans">
 <head>
-  <meta charset="UTF-8"/>
+  <meta name="referrer" content="no-referrer">
+<meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 <meta name="theme-color" content="#222">
@@ -57,6 +58,7 @@
   <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
 
 
+<meta name="referrer" content="no-referrer">
 
 
 
@@ -130,6 +132,7 @@
   <link rel="canonical" href="http://www.ts1989.cn/2018/01/02/SQLfirstview/"/>
 
 
+<meta name="referrer" content="no-referrer">
 
 
 
@@ -155,7 +158,8 @@
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-wrapper">
+      <div class="header-inner"><meta name="referrer" content="no-referrer">
+<div class="site-brand-wrapper">
   <div class="site-meta ">
     
 
@@ -278,7 +282,7 @@
   
 </nav>
 
-
+<meta name="referrer" content="no-referrer">
 
  </div>
     </header>
@@ -409,7 +413,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  4,742字
+                  4,755字
                 </span>
               
 
@@ -503,11 +507,10 @@
 <p>但是MYSQL没有except关键字，只能用建立视图解决问题：</p>
 <blockquote>
 <p>视图的优点：简单、安全、数据独立</p>
-</blockquote>
-<blockquote>
 <p>左连接where只影向右表，右连接where只影响左表</p>
 <p>「select * from tbl1 Left Join tbl2 where tbl1.ID = tbl2.ID」</p>
 <p>左连接后的检索结果是显示tbl1的所有数据和tbl2中满足where 条件的数据</p>
+<p>[左连接实例]:<a href="http://www.w3school.com.cn/sql/sql_join_left.asp" target="_blank" rel="noopener">http://www.w3school.com.cn/sql/sql_join_left.asp</a></p>
 </blockquote>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">create view temp as select distinct cno from sc where sno=’31401’;</span><br><span class="line">第一步，选出学号为31401所选的所有课程，创建视图</span><br><span class="line">create view ttemp as select temp.cno, sno from temp left join sc on temp.cno=sc.cno ; </span><br><span class="line">第二步，选出cno和sno，从temp表以及sc表中cno相同的数据，「对照temp.cno把学号输入一遍」，创建视图</span><br><span class="line">另一种写法：</span><br><span class="line">【create view ttemp as select temp.cno, sno from temp, sc where temp.cno=sc.cno(+)】</span><br><span class="line"></span><br><span class="line">select sno,sname </span><br><span class="line">from student </span><br><span class="line">where sno in (select sno </span><br><span class="line">              from ttemp </span><br><span class="line">              group by sno having count(distinct cno)=3);</span><br><span class="line">第三步，查找从学生表中查询学号姓名，条件是sno等于【从ttemp中选出sno，不重复的cno个数大于等于3的sno】</span><br></pre></td></tr></table></figure>
 <h4 id="由浅入深多表查询"><a href="#由浅入深多表查询" class="headerlink" title="由浅入深多表查询"></a>由浅入深多表查询</h4><p><strong>多表连接分为三类</strong></p>
@@ -747,7 +750,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">40</span>
+                  <span class="site-state-item-count">38</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -758,7 +761,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">5</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -769,7 +772,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">30</span>
+                  <span class="site-state-item-count">27</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -818,7 +821,8 @@
             </div>
           
 
-          <div id="days"></div>
+          <meta name="referrer" content="no-referrer">
+<div id="days"></div>
     <script>
     function show_date_time(){
         window.setTimeout("show_date_time()", 1000);
@@ -878,7 +882,7 @@ show_date_time();
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2023</span>
   <span class="with-love" id="heart">
     <i class="fa fa-heart"></i>
   </span>
@@ -1413,6 +1417,8 @@ show_date_time();
   
 
   
+  
+
 
   
 
